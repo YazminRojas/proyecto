@@ -32,7 +32,5 @@ class Kernel extends ConsoleKernel
     
 }
 
-//Primer prueba yaz
-
-//proyecto agenda 
+//vientos
 
