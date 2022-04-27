@@ -32,11 +32,16 @@ class Kernel extends ConsoleKernel
     
 }
 
-//Primer prueba yaz
+//vientos
 
 //Holaaaaa
+//nada DARIO 
 
 // que haciendo??
 
 
 // Que me cuentas?? ;)
+//No funciona 
+//Probando sincronización 
+
+//Que hago Yaz??
