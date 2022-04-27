@@ -31,5 +31,3 @@ class Kernel extends ConsoleKernel
     }
 }
 
-
-// Boo! 
