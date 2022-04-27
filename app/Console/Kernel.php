@@ -42,3 +42,5 @@ class Kernel extends ConsoleKernel
 //No funciona 
 //Probando sincronización 
 
+//prueba terminada :)
+
