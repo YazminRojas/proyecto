@@ -34,3 +34,9 @@ class Kernel extends ConsoleKernel
 
 //vientos
 
+//Holaaaaa
+//nada DARIO 
+
+// que haciendo??
+
+//No funciona 
