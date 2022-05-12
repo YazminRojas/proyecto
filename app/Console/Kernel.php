@@ -44,4 +44,5 @@ class Kernel extends ConsoleKernel
 //No funciona 
 //Probando sincronización 
 
-//Que hago Yaz??................
+//Que hago Yaz??...............
+///jaja
