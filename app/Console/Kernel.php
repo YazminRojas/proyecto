@@ -45,3 +45,5 @@ class Kernel extends ConsoleKernel
 //Probando sincronización 
 
 //Que hago Yaz??................
+
+//Holaaaaaa soy Alma
