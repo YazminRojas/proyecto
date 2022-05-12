@@ -31,6 +31,7 @@ class Kernel extends ConsoleKernel
     }
     
 }
+//asunto,tema,
 
 //vientos
 
@@ -39,8 +40,15 @@ class Kernel extends ConsoleKernel
 
 // que haciendo??
 
+
+// Que me cuentas?? ;)
 //No funciona 
 //Probando sincronización 
 
 //prueba terminada :)
 
+//Que hago Yaz??...
+
+
+
+// prueba 2...
