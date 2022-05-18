@@ -8,14 +8,10 @@ use App\Http\Requests\UpdateEventoRequest;
 
 class EventoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        //
+        return view('eventos.index');
     }
 
     /**

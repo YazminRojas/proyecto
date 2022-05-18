@@ -6,9 +6,21 @@ use App\Http\Controllers\AgendaController;
 
 
 Route::resources([
-    'agenda'       => AgendaController::class,
+    'agenda'=> AgendaController::class,
 ]);
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+//-------------------------------------------------------------------
+
+Route::resources([
+    'eventos'=> EventoController::class,
+]);
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+//-------------------------------------------------------------------
