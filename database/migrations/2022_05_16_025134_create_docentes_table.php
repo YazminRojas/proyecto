@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('docentes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            ///SOUL
         });
     }
 
