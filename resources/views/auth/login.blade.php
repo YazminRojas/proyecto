@@ -65,10 +65,12 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                            <button type="button" class="btn btn-success">Ingresar</button>
+                            <button type="button" class="btn btn-success" href="{{url('materias/')}}">Ingresar</button>
                                     
                                 </button>
 
+
+                                
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('¿Olvidaste tu contraseña?') }}
