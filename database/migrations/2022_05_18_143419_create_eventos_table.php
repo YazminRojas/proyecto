@@ -15,7 +15,9 @@ return new class extends Migration
     {
         Schema::create('eventos', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->date('Fecha');
+            $table->dateTime('HoraInicio');
+            $table->dateTime('HoraFin');
         });
     }
 

@@ -9,6 +9,6 @@ class Salon extends Model
 {
     use HasFactory;
     protected $fillable =[
-        //atributos de salón    
+        'NumeroSalon'   
     ];
 }

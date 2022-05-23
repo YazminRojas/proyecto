@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('salons', function (Blueprint $table) {
             $table->id();
+            $table->int('NumeroSalon');
         });
     }
 

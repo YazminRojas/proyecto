@@ -13,7 +13,7 @@ class StoreMateriaRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
