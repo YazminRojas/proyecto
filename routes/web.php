@@ -9,9 +9,9 @@ Route::resources([
     'Edificios'       => EdificioController::class,
 ]);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+  //  return view('welcome');
+//});
 
 //-------------------------------------------------------------------
 
@@ -24,6 +24,18 @@ Route::get('/', function () {
 });
 
 //-------------------------------------------------------------------
+
+use App\Http\Controllers\MateriaController;
+
+Route::resources([
+    'materias' => MateriaController::class,
+]);
+
+use App\Http\Controllers\DocenteController;
+
+Route::resources([
+    'docentes' => DocenteController::class,
+]);
 
 Auth::routes();
 
