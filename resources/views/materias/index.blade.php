@@ -13,7 +13,7 @@
       <a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
     <li><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
     <li><a>Calendario</a></li>
-    <li><a>Perfil</a></li>
+    <li><a>Configuración</a></li>
   </ul>
   </div>
   </p>
@@ -32,7 +32,7 @@
     <div class="table-container">
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
             <thead>
-            <tr>
+          <tr>
             <th>Nombre de la materia</th>
             <th>Clave</th>
             <th>Docente</th>
@@ -41,40 +41,36 @@
                 
             @forelse($materias as $materia)
 
-<tr>
+          <tr>
     <th>{{$materia->NombreMateria}}</th>
     <td>{{$materia->ClaveMateria}}</td>
     <td>{{$materia->DocenteMateria}}</td>
 
     <td>
-
-
     <form action="{{ route('materias.destroy', $materia->id) }}"  method="POST">
     <a class="button is-info is-mall" href="{{route('materias.edit' , $materia->id)}}">Editar</a>
     @csrf
     @method('DELETE')
      <button type="submit" class="button is-primary"> eliminar </button>
 
+
+     </tbody>
          </form>
+         
+    </td>
+         </thead>
          </table>
-         </td>
-         
-         
-             </tbody>
              </div>
              <br><br><br>
              <br><br><br>
              <br><br><br>
         </html>
 @empty
+
+<h2><b></b>Aun no a registrado alguna Materia<p></p></h2>
+<br><br>
 <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzrGmf0HAE7dG0d7XRVrXNhTRXf-rd0w1Ddw&usqp=CAU" width="400px" height="200px"></center>
 
-
-<style type="title/css">
- p { color: red; }
- 
-</style>
-<h2><p>Aun no a registrado alguna Materia</p></h2>
 
 @endforelse
         
