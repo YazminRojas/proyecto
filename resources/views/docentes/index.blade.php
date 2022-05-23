@@ -15,7 +15,7 @@
       <li><a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
     <li class="is-active"><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
     <li><a>Calendario</a></li>
-    <li><a>Perfil</a></li>
+    <li><a>configuración</a></li>
   </ul>
 </div>
   
@@ -88,14 +88,15 @@
         @csrf
         @method('DELETE')
          <button type="submit" class="button is-primary"> eliminar </button>
-
          </form>
-         </table>
          </td>
+</thead>
          
+         </table>
          
              </tbody>
              </div>
+            
              <br><br><br>
         </html>
 @empty

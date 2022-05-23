@@ -22,7 +22,7 @@
     <form action="{{ route('materias.store') }}"  method="post" >
             @csrf
             <fieldset>
-
+                
             <div class="form-group">
                 <div class="column">
                 <label for=""><b>Nombre de la materia:</b>  </label>
@@ -46,7 +46,7 @@
             </div>
 
             </fieldset>
-        </form>
+    </form>
         
     </center>
     <br><br><br><br><br><br><br><br><br><br><br>
