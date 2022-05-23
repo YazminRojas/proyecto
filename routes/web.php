@@ -37,6 +37,14 @@ Route::resources([
     'docentes' => DocenteController::class,
 ]);
 
+
+
+use App\Http\Controllers\PerfilController;
+
+Route::resources([
+    'perfils' => PerfilController::class,
+]);
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

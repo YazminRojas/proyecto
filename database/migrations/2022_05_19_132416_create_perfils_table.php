@@ -14,8 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('perfils', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->string('nombrePerfil');
+            $table->string('nombrePersona');
+            $table->string('apellidoPaterno');
+            $table->string('apellidoMaterno');
+            $table->string('numeroTelefonico');
+            $table->text('descripcion');
         });
     }
 
