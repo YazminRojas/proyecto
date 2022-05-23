@@ -65,7 +65,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                            <button type="button" class="btn btn-success" href="{{url('materias/')}}">Ingresar</button>
+                            <button type="button" class="btn btn-success"> <a href="{{url('materias/')}}">Ingresar </a></button>
                                     
                                 </button>
 
