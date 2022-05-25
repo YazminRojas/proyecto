@@ -15,7 +15,8 @@ class PerfilController extends Controller
      */
     public function index()
     {
-        //
+        $perfils = Perfil::all();
+        return view('perfils.index')->with('perfils', Perfil::all());
     }
 
     /**
@@ -25,7 +26,7 @@ class PerfilController extends Controller
      */
     public function create()
     {
-        //
+        return view('perfils.create');
     }
 
     /**
@@ -36,7 +37,27 @@ class PerfilController extends Controller
      */
     public function store(StorePerfilRequest $request)
     {
-        //
+        $request->validate([
+            'NombrePerfil'      =>  'required',
+            'NombrePersona'     =>  'required',
+            'ApellidoPaterno'   =>  'required',
+            'ApellidoMaterno'   =>  'required',
+            'NumeroTelefono'    =>  'required',
+            'Descripcion'       =>  'required'
+        ]);
+
+        $perfil = new Perfil([
+            'NombrePerfil'    =>  $request->get('NombrePerfil'),
+            'NombrePersona'   =>  $request->get('NombrePersona'),
+            'ApellidoPaterno' =>  $request->get('ApellidoPaterno'),
+            'ApellidoMaterno' =>  $request->get('ApellidoMaterno'),
+            'NumeroTelefono'  =>  $request->get('NumeroTelefono'),
+            'Descripcion'     =>  $request->get('Descripcion')
+        ]);
+
+        $perfil->save();
+
+        return redirect()->route('perfils.index');
     }
 
     /**
@@ -58,7 +79,8 @@ class PerfilController extends Controller
      */
     public function edit(Perfil $perfil)
     {
-        //
+        $perfil->edit();
+        return redirect()->route('perfils.index');
     }
 
     /**
@@ -81,6 +103,11 @@ class PerfilController extends Controller
      */
     public function destroy(Perfil $perfil)
     {
-        //
+        $perfil->delete();
+        return redirect()->route('perfils.index');
+    }
+    public function datatable(){
+        $Perfils = Perfil::all();
+        return view('perfils.datatable', compact('perfils'));
     }
 }

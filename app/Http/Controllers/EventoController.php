@@ -11,7 +11,8 @@ class EventoController extends Controller
 
     public function index()
     {
-        return view('eventos.index');
+        $eventos = Evento::all();
+        return view('eventos.index')->with('eventos', Evento::all());;
     }
 
     /**
@@ -21,7 +22,7 @@ class EventoController extends Controller
      */
     public function create()
     {
-        //
+        return view('eventos.create');
     }
 
     /**
@@ -32,7 +33,21 @@ class EventoController extends Controller
      */
     public function store(StoreEventoRequest $request)
     {
-        //
+        $request->validate([
+            'Fecha'       =>  'required',
+            'HoraInicio'  =>  'required',
+            'HoraFin'     =>  'required'
+        ]);
+
+        $evento = new Evento([
+            'Fecha'       =>  $request->get('Fecha'),
+            'HoraInicio'  =>  $request->get('HoraInicio'),
+            'HoraFin'     =>  $request->get('HoraFin')
+        ]);
+
+        $evento->save();
+
+        return redirect()->route('eventos.index');
     }
 
     /**
@@ -54,7 +69,8 @@ class EventoController extends Controller
      */
     public function edit(Evento $evento)
     {
-        //
+        $eventos=Evento::findOrFail($id);
+        return view('eventos.edit',compact('eventos'));
     }
 
     /**
@@ -77,6 +93,12 @@ class EventoController extends Controller
      */
     public function destroy(Evento $evento)
     {
-        //
+        $evento->delete();
+        return redirect()->route('evento.index');
+    }
+    public function datatable(){
+        $Eventos = Evento::all();
+        return view('eventos.datatable', compact('eventos'));
     }
 }
+

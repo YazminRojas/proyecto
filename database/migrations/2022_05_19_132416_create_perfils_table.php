@@ -15,7 +15,12 @@ return new class extends Migration
     {
         Schema::create('perfils', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('NombrePerfil');
+            $table->string('NombrePersona');
+            $table->string('ApellidoPaterno');
+            $table->string('ApellidoMaterno');
+            $table->string('NumeroTelefono');
+            $table->text('Descripcion');
         });
     }
 

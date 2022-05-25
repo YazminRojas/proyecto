@@ -2,7 +2,7 @@
 @section('content')
 
 
-<center><article class="panel is-success" >
+<center><article class="panel is-primary" >
 <h1 class="panel-heading">Agenda ADAM</h1></center>
 
 <article class="panel is-warning" >
@@ -19,7 +19,7 @@
         <br><br><br>
     <div>
 
-    <form action="{{ route('docentes.store') }}"  method="post" >
+        <form action="{{ route('docentes.store') }}"  method="post" >
             @csrf
             <fieldset>
 

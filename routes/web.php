@@ -2,15 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\EdificioController;
-Route::resources([
-    'edificios' => EdificioController::class,
-]);
+//use App\Http\Controllers\EdificioController;
+//Route::resources([
+   // 'edificios' => EdificioController::class,
+//]);
 
-use App\Http\Controllers\AgendaController;
-Route::resources([
-    'agendas'=> AgendaController::class,
-]);
+//use App\Http\Controllers\AgendaController;
+//Route::resources([
+  //  'agendas'=> AgendaController::class,
+//]);
 
 //-------------------------------------------------------------------
 
@@ -28,10 +28,11 @@ Route::resources([
 
 //-------------------------------------------------------------------
 
+
 use App\Http\Controllers\MateriaController;
 
 Route::resources([
-    'materias' => MateriaController::class,
+  'materias' => MateriaController::class,
 ]);
 
 use App\Http\Controllers\DocenteController;
@@ -42,10 +43,16 @@ Route::resources([
 
 
 
+
 Route::get('/', function () {
     return view('welcome');
 });
 
+use App\Http\Controllers\PerfilController;
+
+Route::resources([
+    'perfils' => PerfilController::class,
+]);
 
 Auth::routes();
 

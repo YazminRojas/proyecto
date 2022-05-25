@@ -12,19 +12,19 @@
   </p>
   <div class="tabs is-right  is-toggle is-toggle-rounded">
   <ul>
-      <li><a class=" is-success" href="{{url('eventos/')}}">Eventos</a></li>
-    <li class="is-active"><a class=" is-success" href="{{url('salons/')}}">Eventos</a></li>
-    <li><a>Calendario</a></li>
+      <li><a class=" is-success" href="{{url('eventos/')}}">Fecha:</a></li>
+    <li class="is-active"><a class=" is-success" href="{{url('salons/')}}">Hora de inicio:</a></li>
+    <li><a>Hora de finalización: </a></li>
     <li><a>Perfil</a></li>
   </ul>
 </div>
   
   <html>
-        <body bgcolor="orange">
+        <body bgcolor="pink">
 
   <br><br>
             <center>
-                <a class="button is-danger is-light" href="/docentes/create" >+ Evento</a>
+                <a class="button is-danger is-light" href="/eventos/create" >+ Evento</a>
             </center>
             
 <section class="section">   
@@ -66,10 +66,10 @@
 @empty
 
 <style type="title/css">
- p { color: red; }
+ p { color: blue; }
  
 </style>
-<h2><p>Aun no a registrado algun evento</p></h2>
+<h2><p>Sin registro de eventos </p></h2>
 
 @endforelse
         
