@@ -18,7 +18,7 @@
 </div>
 </p>
   <html>
-        <body bgcolor="orange">
+        <body bgcolor="gray">
         <center>
         <br><br><br>
     <div>
@@ -93,9 +93,6 @@
   
         </html>
 @empty
-<center><img src=
-"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSABKE8SAC4ReLhUJJD185rR2To6dAA-sjarQ&usqp=CAU"
- width="300px" height="200px"></center>
 
 <style type="title/css">
  p { color: red; }
