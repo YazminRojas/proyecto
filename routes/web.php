@@ -47,4 +47,18 @@ Route::resources([
 
 Auth::routes();
 
+
+
+
+use App\Http\Controllers\NotaController;
+
+Route::resources([
+    'Notas' => NotaController::class,
+]);
+
+
+
+
+
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

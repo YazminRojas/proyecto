@@ -13,15 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('eventos', function (Blueprint $table) {
+        Schema::create('notas', function (Blueprint $table) {
             $table->id();
 
-            
-           
-
-
-
-
+            $table->text('cuerpoTexto',250);
+            $table->boolean('tipoNota')->default(true);
 
 
             $table->timestamps();
@@ -35,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('eventos');
+        Schema::dropIfExists('notas');
     }
 };
