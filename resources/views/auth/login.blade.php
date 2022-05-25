@@ -5,6 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+
+            
                 <div class="card-header">{{ __('Iniciar Sesión') }}</div>
 
                 <div class="card-body">
@@ -12,9 +14,11 @@
                         @csrf
 
                         <div class="row mb-3">
+                        <center><img src="https://proyectosbeta.net/wp-content/uploads/2019/05/Agenda-Digital-imagen-destacada.png" width="300px" heigth="300px"></center><br>
+                        <br>
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Correo Electrónico') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6"><br>
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
@@ -39,10 +43,9 @@
                             </div>
                         </div>
 
-
 <div>  
 <label for="tipoUsuario" class="col-md-4 col-form-label text-md-end">{{ __('Tipo de usuario') }}</label>    
-<select class="form-select" aria-label="Default select example">
+<center><select class="form-select" aria-label="Default select example" style="width: 300px;"></center>
   <option value="1">Alumno</option>
   <option value="3">Docente</option>
 </select>
@@ -65,9 +68,9 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                            <button type="button" class="btn btn-success"> <a href="{{url('materias/')}}">Ingresar </a></button>
+                             <a class="btn btn-success" href="{{url('materias/')}}">Ingresar </a>
                                     
-                                </button>
+                                
 
 
                                 

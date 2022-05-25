@@ -13,13 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('materias', function (Blueprint $table) {
+        Schema::create('calendarios', function (Blueprint $table) {
             $table->id();
-            $table->string('NombreMateria', 50);
-            $table->string('ClaveMateria', 10);
-            $table->string('DocenteMateria', 50);
-            $table->string('Edificio', 1);
-            $table->string('Salon', 10);
             $table->timestamps();
         });
     }
@@ -31,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('materias');
+        Schema::dropIfExists('calendarios');
     }
 };

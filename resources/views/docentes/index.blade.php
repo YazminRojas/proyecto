@@ -8,19 +8,17 @@
     
   <p class="panel-heading">
     Docentes
-    
-  </p>
   <div class="tabs is-right  is-toggle is-toggle-rounded">
   <ul>
       <li><a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
     <li class="is-active"><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
     <li><a>Calendario</a></li>
-    <li><a>configuración</a></li>
+    <li><a>Configuración</a></li>
   </ul>
 </div>
-  
+</p>
   <html>
-        <body bgcolor="orange">
+        <body bgcolor="gray">
         <center>
         <br><br><br>
     <div>
@@ -55,7 +53,7 @@
   KbIpqSOl72ZGxPJajfYiHo15QMY9hKnxeo9W74DsJU+L1Hq3fA2dryjXlAxj2EqfF6j1bvgOwlT4vUerd8DZ2vKNe
   UDGPYSp8XqPVu+B5pqSSD7Zj26eE1UNr68p+XtSRNH6Ki8CpqBiIGw7hhOguPf9JSvXjWJEd6TSKXXJm11m2mSW
   Bfw3+5+oGZwXXX5CvTbbKtq8ksaochcjrhrpu6T03fACDYNoFuldTQomu6mjRehu0VTYSld5b5Yswi75RWvSWp0V
-  qKiaMYiliAAAB//9k=" width="200px" height="300px" ></center>
+  qKiaMYiliAAAB//9k=" width="200px" height="301px" ></center>
 
   <br><br>
             <center>
@@ -90,19 +88,11 @@
          <button type="submit" class="button is-primary"> eliminar </button>
          </form>
          </td>
-</thead>
-         
-         </table>
-         
+    </tr>
              </tbody>
-             </div>
-            
-             <br><br><br>
+  
         </html>
 @empty
-<center><img src=
-"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSABKE8SAC4ReLhUJJD185rR2To6dAA-sjarQ&usqp=CAU"
- width="300px" height="200px"></center>
 
 <style type="title/css">
  p { color: red; }
