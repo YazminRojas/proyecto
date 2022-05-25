@@ -15,7 +15,8 @@ class PerfilController extends Controller
      */
     public function index()
     {
-        //
+        $perfils = Perfil::all();
+        return view('perfils.index')->with('perfils', Perfil::all());
     }
 
     /**
