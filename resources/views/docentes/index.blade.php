@@ -12,7 +12,7 @@
   <ul>
       <li><a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
     <li class="is-active"><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
-    <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
+    <li><a>Calendario</a></li>
     <li><a>Configuración</a></li>
   </ul>
 </div>
