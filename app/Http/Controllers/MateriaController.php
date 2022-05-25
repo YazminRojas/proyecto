@@ -15,7 +15,8 @@ class MateriaController extends Controller
      */
     public function index()
     {
-        //
+        $materias = Materia::all();
+        return view('materias.index')->with('materias', Materia::all());
     }
 
     /**
@@ -25,7 +26,7 @@ class MateriaController extends Controller
      */
     public function create()
     {
-        //
+        return view('materias.create');
     }
 
     /**
@@ -36,7 +37,25 @@ class MateriaController extends Controller
      */
     public function store(StoreMateriaRequest $request)
     {
-        //
+        $request->validate([
+            'NombreMateria'     =>  'required',
+            'ClaveMateria'     =>  'required',
+            'DocenteMateria'     =>  'required',
+            'Edificio'     =>  'required',
+            'Salon'     =>  'required'
+        ]);
+
+        $materia = new Materia([
+            'NombreMateria'     =>  $request->get('NombreMateria'),
+            'ClaveMateria'     =>  $request->get('ClaveMateria'),
+            'DocenteMateria'     =>  $request->get('DocenteMateria'),
+            'Edificio'     =>  $request->get('Edificio'),
+            'Salon'     =>  $request->get('Salon')
+        ]);
+
+        $materia->save();
+
+        return redirect()->route('materias.index');
     }
 
     /**
@@ -56,9 +75,10 @@ class MateriaController extends Controller
      * @param  \App\Models\Materia  $materia
      * @return \Illuminate\Http\Response
      */
-    public function edit(Materia $materia)
+    public function edit($id)
     {
-        //
+        $materia->edit();
+        return redirect()->route('materias.index');
     }
 
     /**
@@ -81,6 +101,11 @@ class MateriaController extends Controller
      */
     public function destroy(Materia $materia)
     {
-        //
+        $materia->delete();
+        return redirect()->route('materias.index');
+    }
+    public function datatable(){
+        $Materias = Materia::all();
+        return view('materias.datatable', compact('materias'));
     }
 }

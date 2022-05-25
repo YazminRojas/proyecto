@@ -1,0 +1,22 @@
+center{
+    background-color: aqua;
+}
+
+.navbar-laravel .navbar-brand {
+  color: #fff;
+}
+
+table{
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+div{
+  color:rgb(25, 134, 134);
+}
+
+.ms-5 {
+  margin-left: (Materia * .25) !important;
+}

@@ -15,7 +15,8 @@ class DocenteController extends Controller
      */
     public function index()
     {
-        //
+        $docentes = Docente::all();
+        return view('docentes.index')->with('docentes', Docente::all());
     }
 
     /**
@@ -25,7 +26,7 @@ class DocenteController extends Controller
      */
     public function create()
     {
-        //
+        return view('docentes.create');
     }
 
     /**
@@ -36,7 +37,21 @@ class DocenteController extends Controller
      */
     public function store(StoreDocenteRequest $request)
     {
-        //
+        $request->validate([
+            'Nombre'     =>  'required',
+            'ApellidoPaterno'     =>  'required',
+            'ApellidoMaterno'     =>  'required'
+        ]);
+
+        $docente = new Docente([
+            'Nombre'     =>  $request->get('Nombre'),
+            'ApellidoPaterno'     =>  $request->get('ApellidoPaterno'),
+            'ApellidoMaterno'     =>  $request->get('ApellidoMaterno')
+        ]);
+
+        $docente->save();
+
+        return redirect()->route('docentes.index');
     }
 
     /**
@@ -56,9 +71,10 @@ class DocenteController extends Controller
      * @param  \App\Models\Docente  $docente
      * @return \Illuminate\Http\Response
      */
-    public function edit(Docente $docente)
+    public function edit($id)
     {
-        //
+        $docentes=Docente::findOrFail($id);
+        return view('docentes.edit',compact('docentes'));
     }
 
     /**
@@ -81,6 +97,11 @@ class DocenteController extends Controller
      */
     public function destroy(Docente $docente)
     {
-        //
+        $docente->delete();
+        return redirect()->route('docentes.index');
+    }
+    public function datatable(){
+        $Docentes = Docente::all();
+        return view('docentes.datatable', compact('docentes'));
     }
 }
