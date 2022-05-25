@@ -49,7 +49,7 @@ Auth::routes();
 
 
 
-
+//Vista de nootas!!
 use App\Http\Controllers\NotaController;
 
 Route::resources([
