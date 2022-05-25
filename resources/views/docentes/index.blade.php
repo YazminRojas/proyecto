@@ -8,8 +8,6 @@
     
   <p class="panel-heading">
     Docentes
-    
-  </p>
   <div class="tabs is-right  is-toggle is-toggle-rounded">
   <ul>
       <li><a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
@@ -18,7 +16,7 @@
     <li><a>configuración</a></li>
   </ul>
 </div>
-  
+</p>
   <html>
         <body bgcolor="orange">
         <center>
@@ -90,14 +88,9 @@
          <button type="submit" class="button is-primary"> eliminar </button>
          </form>
          </td>
-</thead>
-         
-         </table>
-         
+    </tr>
              </tbody>
-             </div>
-            
-             <br><br><br>
+  
         </html>
 @empty
 <center><img src=

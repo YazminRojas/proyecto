@@ -19,8 +19,7 @@
   </p>
 
   
-  <html>
-        <body bgcolor="orange">
+
         <center>
         <br><br><br>
     <div>
@@ -30,12 +29,14 @@
             
 <section class="section">   
     <div class="table-container">
-<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" bgcolor=#990000>
             <thead>
           <tr>
             <th>Nombre de la materia</th>
             <th>Clave</th>
             <th>Docente</th>
+            <th>Edificio</th>
+            <th>Salon</th>
             </tr>
             <tbody>
                 
@@ -45,6 +46,8 @@
     <th>{{$materia->NombreMateria}}</th>
     <td>{{$materia->ClaveMateria}}</td>
     <td>{{$materia->DocenteMateria}}</td>
+    <td>{{$materia->Edificio}}</td>
+    <td>{{$materia->Salon}}</td>
 
     <td>
     <form action="{{ route('materias.destroy', $materia->id) }}"  method="POST">
@@ -52,19 +55,11 @@
     @csrf
     @method('DELETE')
      <button type="submit" class="button is-primary"> eliminar </button>
-
-
-     </tbody>
-         </form>
-         
-    </td>
-         </thead>
-         </table>
-             </div>
-             <br><br><br>
-             <br><br><br>
-             <br><br><br>
-        </html>
+     </form>
+         </td>
+    </tr>
+             </tbody>
+       
 @empty
 
 <h2><b></b>Aun no a registrado alguna Materia<p></p></h2>
@@ -73,7 +68,11 @@
 
 
 @endforelse
-        
-    </div> 
+        </html>
+    </div>
 </section>
 @endsection
+      <body bgcolor="orange">
+        
+      </body>
+    </html>

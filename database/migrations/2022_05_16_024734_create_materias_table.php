@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('NombreMateria', 50);
             $table->string('ClaveMateria', 10);
             $table->string('DocenteMateria', 50);
+            $table->tinyInteger('Edificio', false, true);
+            $table->string('Salon', 10);
             $table->timestamps();
         });
     }
