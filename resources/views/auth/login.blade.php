@@ -39,7 +39,6 @@
                             </div>
                         </div>
 
-
 <div>  
 <label for="tipoUsuario" class="col-md-4 col-form-label text-md-end">{{ __('Tipo de usuario') }}</label>    
 <select class="form-select" aria-label="Default select example" >
