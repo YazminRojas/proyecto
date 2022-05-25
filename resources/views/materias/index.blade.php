@@ -21,6 +21,10 @@
   
 
         <center>
+
+        <center>
+                <a class="button is-danger is-light" href="/materias/create" >+ Materia</a>
+            </center>
         <br><br><br>
     <div>
             
@@ -58,7 +62,7 @@
     </tr>
              </tbody>
 
-</table>
+
              
        
 @empty
@@ -67,9 +71,7 @@
 <br><br>
 
 
-<center>
-                <a class="button is-danger is-light" href="/materias/create" >+ Materia</a>
-            </center>
+
 
 @endforelse
         </html>
@@ -79,4 +81,5 @@
       <body bgcolor="white">
         
       </body>
+      </table>
     </html>
