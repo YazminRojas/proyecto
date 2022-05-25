@@ -44,6 +44,7 @@
 <div class="form-group">
 <select name="Edificio" id="">
 
+<option value="No especificado">Elige el Edificio</option>
 <option value="A">A</option>
 <option value="B">B</option>
 
@@ -58,9 +59,9 @@
 
 </select>
                     </div>
-
+<br><br>
 <div class="form-group">
-                <label for=""><b>Salón:</b></label>
+                <label for=""><b>   Salón:</b></label>
                 <input type="text" name="Salon" id="" size="30">
             </div>
             <div class="mt-5">

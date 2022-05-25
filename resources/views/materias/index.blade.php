@@ -2,7 +2,7 @@
 @section('content')
 
 <center><article class="panel is-success" >
-<h1 class="panel-heading">Agenda ADAM</h1></center>
+<h1 class="panel-heading">AGENDA ADAM</h1></center>
 
 <article class="panel is-warning" >
   <p class="panel-heading">
@@ -12,7 +12,7 @@
     <li class="is-active">
       <a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
     <li><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
-    <li><a>Calendario</a></li>
+    <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
     <li><a class=" is-success" href="{{url('perfils/')}}">Configuración</a></li>
   </ul>
   </div>
