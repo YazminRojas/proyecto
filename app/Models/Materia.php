@@ -10,6 +10,6 @@ class Materia extends Model
     use HasFactory;
 
     protected $fillable = [
-        'NombreMateria','ClaveMateria','DocenteMateria'
+        'NombreMateria','ClaveMateria','DocenteMateria','Edificio','Salon'
     ];
 }

@@ -39,7 +39,31 @@
                 <label for=""><b>Docente que imparte la materia:</b></label>
                 <input type="text" name="DocenteMateria" id="" size="30">
             </div>
+            
 <br> <br>
+<div class="form-group">
+<select name="Edificio" id="">
+
+<option value="No especificado">Elige el Edificio</option>
+<option value="A">A</option>
+<option value="B">B</option>
+
+<option value="C">C</option>
+<option value="D">D</option>
+<option value="E">E</option>
+<option value="F">F</option>
+<option value="G">G</option>
+<option value="H">H</option>
+<option value="I">I</option>
+<option value="J">J</option>
+
+</select>
+                    </div>
+<br><br>
+<div class="form-group">
+                <label for=""><b>   Salón:</b></label>
+                <input type="text" name="Salon" id="" size="30">
+            </div>
             <div class="mt-5">
                 <input class="button is-primary" type="submit" value="Guardar">
                 <a class="button is-success" href="{{url('materias/')}}">Cancelar</a>

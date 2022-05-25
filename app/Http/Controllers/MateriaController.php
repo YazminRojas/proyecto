@@ -40,13 +40,17 @@ class MateriaController extends Controller
         $request->validate([
             'NombreMateria'     =>  'required',
             'ClaveMateria'     =>  'required',
-            'DocenteMateria'     =>  'required'
+            'DocenteMateria'     =>  'required',
+            'Edificio'     =>  'required',
+            'Salon'     =>  'required'
         ]);
 
         $materia = new Materia([
             'NombreMateria'     =>  $request->get('NombreMateria'),
             'ClaveMateria'     =>  $request->get('ClaveMateria'),
-            'DocenteMateria'     =>  $request->get('DocenteMateria')
+            'DocenteMateria'     =>  $request->get('DocenteMateria'),
+            'Edificio'     =>  $request->get('Edificio'),
+            'Salon'     =>  $request->get('Salon')
         ]);
 
         $materia->save();
