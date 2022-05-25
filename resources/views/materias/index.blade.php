@@ -76,7 +76,7 @@
     </div>
 </section>
 @endsection
-      <body bgcolor="black">
+      <body bgcolor="white">
         
       </body>
     </html>
