@@ -5,7 +5,8 @@
 <h1 class="panel-heading">AGENDA ADAM</h1></center>
 
 
-<br><br><br><b><br><br><br><br><br></b><center><table class="table-danger">
+</b><center>
+  <table class="table-danger">
   <thead>
     <tr><center>
       <th scope="col">CONFIGURACIÓN GENERAL</th>
