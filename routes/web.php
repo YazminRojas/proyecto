@@ -45,6 +45,14 @@ Route::resources([
     'perfils' => PerfilController::class,
 ]);
 
+
+
+use App\Http\Controllers\CalendarioController;
+
+Route::resources([
+    'calendarios' => CalendarioController::class,
+]);
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
