@@ -42,7 +42,7 @@
 
 <div>  
 <label for="tipoUsuario" class="col-md-4 col-form-label text-md-end">{{ __('Tipo de usuario') }}</label>    
-<select class="form-select" aria-label="Default select example">
+<select class="form-select" aria-label="Default select example" >
   <option value="1">Alumno</option>
   <option value="3">Docente</option>
 </select>
@@ -65,9 +65,9 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                            <button type="button" class="btn btn-success"> <a href="{{url('materias/')}}">Ingresar </a></button>
+                             <a class="btn btn-success" href="{{url('materias/')}}">Ingresar </a>
                                     
-                                </button>
+                                
 
 
                                 
