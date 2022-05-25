@@ -1,6 +1,10 @@
 @extends('layout.layout')
 @section('content')
 
+<center><article class="panel is-success" >
+<h1 class="panel-heading">AGENDA ADAM</h1></center>
+
+
 <br><br><br><b><br><br><br><br><br></b><center><table class="table-danger">
   <thead>
     <tr><center>
