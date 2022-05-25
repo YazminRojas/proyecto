@@ -75,7 +75,7 @@ class MateriaController extends Controller
      * @param  \App\Models\Materia  $materia
      * @return \Illuminate\Http\Response
      */
-    public function edit(Materia $materia)
+    public function edit($id)
     {
         $materia->edit();
         return redirect()->route('materias.index');
