@@ -16,7 +16,7 @@ class CalendarioController extends Controller
     public function index()
     {
       $month = date("Y-m");
-      $data = $this->calendar_month($month);
+      $data = $this->calendario_month($month);
       $mes = $data['month'];
       // obtener mes en espanol
       $mespanish = $this->spanish_month($mes);
@@ -32,7 +32,7 @@ class CalendarioController extends Controller
 
   public function index_month($month){
 
-    $data = $this->calendar_month($month);
+    $data = $this->calendario_month($month);
     $mes = $data['month'];
     // obtener mes en espanol
     $mespanish = $this->spanish_month($mes);
@@ -116,7 +116,7 @@ class CalendarioController extends Controller
 
 
 
-    public static function calendar_month($month){
+    public static function calendario_month($month){
         //$mes = date("Y-m");
         $mes = $month;
         //sacar el ultimo de dia del mes
@@ -136,7 +136,7 @@ class CalendarioController extends Controller
         $semana1 = date("W",strtotime($fecha));
         // numero de ultima semana del mes
         $semana2 = date("W",strtotime($daylast));
-        // semana todal del mes
+        // semana total del mes
         // en caso si es diciembre
         if (date("m", strtotime($mes))==12) {
             $semana = 5;
@@ -144,7 +144,7 @@ class CalendarioController extends Controller
         else {
           $semana = ($semana2-$semana1)+1;
         }
-        // semana todal del mes
+        // semana total del mes
         $datafecha = $dateini;
         $calendario = array();
         $iweek = 0;

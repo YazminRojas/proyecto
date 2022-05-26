@@ -35,12 +35,18 @@ Route::resources([
   'datosUsuarios' => DatoUsuarioController::class,
 ]);
 
-
+//------------------------------------------------------
 use App\Http\Controllers\CalendarioController;
 
 Route::resources([
-    'calendarios' => CalendarioController::class,
+   'calendarios' => CalendarioController::class,
 ]);
+//Route::resources([
+  //'calendarios/event' => CalendarioController::class,
+//]);
+//Route::resources([
+  //'calendarios/event/{mes}' => CalendarioController::class,
+//]);
 
 //Route::get('Calendario/event/{mes}','ControllerCalendar@index_month');
 //Route::get('Calendar/event','ControllerCalendario@index');
