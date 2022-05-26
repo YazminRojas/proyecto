@@ -15,9 +15,8 @@ class NotaController extends Controller
      */
     public function index()
     {
-        $notas = nota::all();
-        return view('notas.index',compact('notas'));
-
+        $notas = Nota::all();
+        return view('notas.index')->with('notas', Nota::all());
     }
 
     /**
@@ -27,7 +26,7 @@ class NotaController extends Controller
      */
     public function create()
     {
-        //
+        return view('notas.create');
     }
 
     /**
@@ -38,7 +37,25 @@ class NotaController extends Controller
      */
     public function store(StoreNotaRequest $request)
     {
-        //
+        $request->validate([
+            'cuerpoTexto'     =>  'required',
+            'tipoNota'     =>  'required',
+            'colorimetria'     =>  'required',
+            'horaInicial'     =>  'required',
+            'horaFinal'     =>  'required'
+        ]);
+
+        $nota = new Nota([
+            'cuerpoTexto'     =>  $request->get('cuerpoNota'),
+            'tipoNota'     =>  $request->get('tipoNota'),
+            'colorimetria'     =>  $request->get('colorimetria'),
+            'horaInicial'     =>  $request->get('horaInicial'),
+            'horaFinal'     =>  $request->get('horaFinal')
+        ]);
+
+        $nota->save();
+
+        return redirect()->route('notas.index');    
     }
 
     /**
@@ -83,6 +100,11 @@ class NotaController extends Controller
      */
     public function destroy(Nota $nota)
     {
-        //
+        $nota->delete();
+        return redirect()->route('notas.index');
+    }
+    public function datatable(){
+        $Materias = Nota::all();
+        return view('notas.datatable', compact('notas'));
     }
 }

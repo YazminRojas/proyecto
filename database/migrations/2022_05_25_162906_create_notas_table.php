@@ -18,7 +18,11 @@ return new class extends Migration
 
 
             $table->text('cuerpoTexto',250);
-            $table->enum('tipoNota',['Examenes','Tareas','Proyectos','Recordatorios','Otros']);
+            $table->string('tipoNota', 20);
+            $table->string('colorimetria', 20);
+            $table->date('fecha');
+            $table->time('horaInicial');
+            $table->time('horaFinal');
 
 
 

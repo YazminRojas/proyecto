@@ -1,10 +1,10 @@
 @extends('layout.layout')
 @section('content')
 
-<center><article class="panel is-success" >
+<center><article class="panel is-link" >
 <h1 class="panel-heading">Agenda ADAM</h1></center>
 
-<article class="panel is-warning" >
+<article class="panel is-gray" >
     
   <p class="panel-heading">
     Docentes
@@ -18,7 +18,7 @@
 </div>
 </p>
   <html>
-        <body bgcolor="gray">
+        <body bgcolor="white">
         <center>
         <br><br><br>
     <div>

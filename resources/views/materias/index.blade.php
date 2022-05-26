@@ -1,28 +1,24 @@
 @extends('layout.layout')
 @section('content')
 
-<center>
-    <article class="panel is-success">
-        <h1 class="panel-heading">AGENDA ADAM</h1>
-</center>
+<center><article class="panel is-link" >
+<h1 class="panel-heading">AGENDA ADAM</h1></center>
+
 
 <article class="panel is-warning">
     <p class="panel-heading">
         Materias
     <div class="tabs is-right  is-toggle is-toggle-rounded">
-        <ul>
-            <li class="is-active">
-                <a class=" is-success" href="{{url('materias/')}}">Materias</a>
-            </li>
-            <li><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
-            <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
-            <li><a class=" is-success" href="{{url('perfils/')}}">Configuración</a></li>
-        </ul>
-    </div>
-    </p>
-
-
-
+  <ul>
+    <li class="is-active">
+      <a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
+    <li><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
+    <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
+    <li><a class=" is-success" href="{{url('perfils/')}}">Configuración</a></li>
+  </ul>
+  </div>
+</p>
+            
     <center>
 
         <center>
@@ -30,7 +26,6 @@
         </center>
         <br><br><br>
         <div>
-
 
             <section class="section">
                 <div class="table-container">
@@ -66,18 +61,11 @@
                             </tr>
                         </tbody>
 
-
-
-
                         @empty
 
                         <h2><b></b>Aun no a registrado alguna Materia<p></p>
                         </h2>
                         <br><br>
-
-
-
-
                         @endforelse
 
                         </html>
