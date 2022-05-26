@@ -20,11 +20,6 @@ Route::resources([
 ]);
 
 
-use App\Http\Controllers\SalonController;
-Route::resources([
-    'salons'=> SalonController::class,
-]);
-
 
 //-------------------------------------------------------------------
 
@@ -41,7 +36,11 @@ Route::resources([
     'docentes' => DocenteController::class,
 ]);
 
+use App\Http\Controllers\DatoUsuarioController;
 
+Route::resources([
+  'datosUsuarios' => DatoUsuarioController::class,
+]);
 
 
 Route::get('/', function () {
@@ -50,9 +49,6 @@ Route::get('/', function () {
 
 use App\Http\Controllers\PerfilController;
 
-Route::resources([
-    'perfils' => PerfilController::class,
-]);
 
 
 

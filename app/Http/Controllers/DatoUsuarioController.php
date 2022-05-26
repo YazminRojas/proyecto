@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Perfil;
-use App\Http\Requests\StorePerfilRequest;
-use App\Http\Requests\UpdatePerfilRequest;
+use App\Models\DatoUsuario;
+use App\Http\Requests\StoreDatoUsuarioRequest;
+use App\Http\Requests\UpdateDatoUsuarioRequest;
 
-class PerfilController extends Controller
+class DatoUsuarioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class PerfilController extends Controller
      */
     public function index()
     {
-        $perfils = Perfil::all();
-        return view('perfils.index')->with('perfils', Perfil::all());
+        $datosUsuarios = DatoUsuario::all();
+        return view('datosUsuarios.index')->with('datosUsuarios', DatoUsuario::all());
     }
 
     /**
@@ -26,16 +26,16 @@ class PerfilController extends Controller
      */
     public function create()
     {
-        return view('perfils.create');
+        return view('datosUsuarios.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StorePerfilRequest  $request
+     * @param  \App\Http\Requests\StoreDatoUsuarioRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorePerfilRequest $request)
+    public function store(StoreDatoUsuarioRequest $request)
     {
         $request->validate([
             'NombrePerfil'      =>  'required',
@@ -46,7 +46,7 @@ class PerfilController extends Controller
             'Descripcion'       =>  'required'
         ]);
 
-        $perfil = new Perfil([
+        $datoUsuario = new DatoUsuario([
             'NombrePerfil'    =>  $request->get('NombrePerfil'),
             'NombrePersona'   =>  $request->get('NombrePersona'),
             'ApellidoPaterno' =>  $request->get('ApellidoPaterno'),
@@ -55,18 +55,18 @@ class PerfilController extends Controller
             'Descripcion'     =>  $request->get('Descripcion')
         ]);
 
-        $perfil->save();
+        $datoUsuario->save();
 
-        return redirect()->route('perfils.index');
+        return redirect()->route('datosUsuarios.index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Perfil  $perfil
+     * @param  \App\Models\DatoUsuario  $datoUsuario
      * @return \Illuminate\Http\Response
      */
-    public function show(Perfil $perfil)
+    public function show(DatoUsuario $datoUsuario)
     {
         //
     }
@@ -74,23 +74,23 @@ class PerfilController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Perfil  $perfil
+     * @param  \App\Models\DatoUsuario  $datoUsuario
      * @return \Illuminate\Http\Response
      */
-    public function edit(Perfil $perfil)
+    public function edit(DatoUsuario $datoUsuario)
     {
-        $perfil->edit();
-        return redirect()->route('perfils.index');
+        $datoUsuario->edit();
+        return redirect()->route('datosUsuarios.index');
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatePerfilRequest  $request
-     * @param  \App\Models\Perfil  $perfil
+     * @param  \App\Http\Requests\UpdateDatoUsuarioRequest  $request
+     * @param  \App\Models\DatoUsuario  $datoUsuario
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatePerfilRequest $request, Perfil $perfil)
+    public function update(UpdateDatoUsuarioRequest $request, DatoUsuario $datoUsuario)
     {
         //
     }
@@ -98,16 +98,16 @@ class PerfilController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Perfil  $perfil
+     * @param  \App\Models\DatoUsuario  $datoUsuario
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Perfil $perfil)
+    public function destroy(DatoUsuario $datoUsuario)
     {
-        $perfil->delete();
-        return redirect()->route('perfils.index');
+        $datoUsuario->delete();
+        return redirect()->route('datosUsuarios.index');
     }
     public function datatable(){
-        $Perfils = Perfil::all();
-        return view('perfils.datatable', compact('perfils'));
+        $datosUsuarios = DatoUsario::all();
+        return view('datosUsuarios.datatable', compact('datosUsuarios'));
     }
 }

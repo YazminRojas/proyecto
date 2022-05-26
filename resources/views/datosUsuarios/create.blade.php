@@ -14,12 +14,12 @@
     </section>
 
     <html>
-        <body bgcolor="green">
+        <body bgcolor="pink">
         <center>
         <br><br><br>
     <div>
 
-    <form action="{{ route('perfils.store') }}"  method="post" >
+    <form action="{{ route('datosUsuarios.store') }}"  method="post" >
             @csrf
             <fieldset>
                 

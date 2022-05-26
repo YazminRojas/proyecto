@@ -42,7 +42,7 @@
         </thead>
         <tbody>
 
-        @forelse($perfils as $perfil)
+        @forelse($datosUsuarios as $datoUsuario)
             <tr>
                 <td>{{ $perfil->NombrePerfil }}</td>
                 <td>{{ $perfil->NombrePersona }}</td>
