@@ -15,7 +15,8 @@ class ConfiguracionController extends Controller
      */
     public function index()
     {
-        //
+        $configuracions = Configuracion::all();
+        return view('configuracions.index')->with('configuracions', Configuracion::all());
     }
 
     /**
