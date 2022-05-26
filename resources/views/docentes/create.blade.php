@@ -14,7 +14,7 @@
     </section>
 
     <html>
-        <body bgcolor="orange">
+        <body bgcolor="white">
         <center>
         <br><br><br>
     <div>

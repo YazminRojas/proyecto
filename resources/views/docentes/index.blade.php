@@ -18,7 +18,7 @@
 </div>
 </p>
   <html>
-        <body bgcolor="gray">
+        <body bgcolor="white">
         <center>
         <br><br><br>
     <div>

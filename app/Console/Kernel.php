@@ -31,29 +31,3 @@ class Kernel extends ConsoleKernel
     }
     
 }
-//asunto,tema,
-
-//vientos
-
-//Holaaaaa
-//nada DARIO 
-
-// que haciendo??
-
-
-// Que me cuentas?? ;)
-//No funciona 
-//Probando sincronización 
-
-//prueba terminada :)
-
-//Que hago Yaz??...
-
-
-
-// prueba 2...
-//Que hago Yaz??................
-
-//Holaaaaaa soy Alma
-//Que hago Yaz??...............
-///jaja
