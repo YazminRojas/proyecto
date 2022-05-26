@@ -42,17 +42,17 @@
                             <div class="columns">
                                 <div class="column">
                                 </div>
-                                <label>Nombre de usuario:</label><br><br><br><br>
+                                <th><label>Nombre de usuario:</label><br><br><br><br></th>
                                 <input type="text" class="input is-warning" name="NombrePerfil"
                                     placeholder="Escribe un nombre de usuario">
                                 <div class="column">
                                 
                                 </div>
-                                <input type="submit" class="button is-warning" value="Editar">
+                                <th><input type="submit" class="button is-warning" value="Editar"></th>
                                 <div class="column">
                                    
                                 </div>
-                                <input type="submit" class="button is-warning" value="Guardar">
+                                <th><input type="submit" class="button is-warning" value="Guardar"></th>
                             </div>
 
 
