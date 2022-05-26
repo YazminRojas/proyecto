@@ -22,6 +22,7 @@
         <br><br><br>
         <center>
 
+        <form action="{{ route('materias.store') }}" method="post">
             @csrf
             <div class="form-group">
                 <select name="tipoNota" id="">
@@ -47,26 +48,25 @@
             </div>
             <div>
 
-                <form action="{{ route('notas.store') }}" method="post">
-                    @csrf
+            
                     <br><br><br>
 
-                        <div class="form-group">
-                            <div class="mb-50">
-                                <label for="" class="form-label">Nota: </label><br>
-                                <textarea class="form-control" id="cuerpoNota" rows="15" cols="160"></textarea>
-                            </div>
+                    <div class="form-group">
+                        <div class="mb-50">
+                            <label for="" class="form-label">Nota: </label><br>
+                            <textarea class="form-control" id="cuerpoNota" rows="15" cols="160"></textarea>
                         </div>
+                    </div>
 
-                        <div class="mt-5">
-                <input class="button is-primary" type="submit" value="Guardar">
-                <a class="button is-success" href="{{url('notas/')}}">Cancelar</a>
-            </div>
+                    <div class="mt-5">
+                        <input class="button is-primary" type="submit" value="Guardar">
+                        <a class="button is-success" href="{{url('notas/')}}">Cancelar</a>
+                    </div>
 
-                        <br> <br>
+                    <br> <br>
 
 
-                </form>
+            </form>
 
         </center>
         <br><br><br><br><br><br><br><br><br><br><br>
