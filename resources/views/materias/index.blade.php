@@ -67,7 +67,7 @@
        
 @empty
 
-<h2><b></b>Aun no a registrado alguna Materia<p></p></h2>
+<h2><b></b>Aún no a registrado alguna materia<p></p></h2>
 <br><br>
 
 
