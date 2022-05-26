@@ -4,7 +4,6 @@
 <center><article class="panel is-link" >
 <h1 class="panel-heading">AGENDA ADAM</h1></center>
 
-<<<<<<< HEAD
 <article class="panel is-gray" >
   <p class="panel-heading">
     Materias

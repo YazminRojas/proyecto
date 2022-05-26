@@ -29,12 +29,6 @@ Route::resources([
     'docentes' => DocenteController::class,
 ]);
 
-use App\Http\Controllers\DatoUsuarioController;
-
-Route::resources([
-  'datosUsuarios' => DatoUsuarioController::class,
-]);
-
 //------------------------------------------------------
 use App\Http\Controllers\CalendarioController;
 
