@@ -4,6 +4,7 @@
 <center><article class="panel is-link" >
 <h1 class="panel-heading">AGENDA ADAM</h1></center>
 
+<<<<<<< HEAD
 <article class="panel is-gray" >
   <p class="panel-heading">
     Materias
@@ -13,73 +14,68 @@
       <a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
     <li><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
     <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
-    <li><a class=" is-success" href="{{url('perfils/')}}">Configuración</a></li>
+    <li><a class=" is-success" href="{{url('configuracions/')}}">Configuración</a></li>
   </ul>
   </div>
-  </p>
-
-  
-
-        <center>
+</p>
+            
+    <center>
 
         <center>
-                <a class="button is-danger is-light" href="/materias/create" >+ Materia</a>
-            </center>
+            <a class="button is-danger is-light" href="/materias/create">+ Materia</a>
+        </center>
         <br><br><br>
-    <div>
-            
-            
-<section class="section">   
-    <div class="table-container">
-<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" bgcolor=#990000>
-            <thead>
-          <tr>
-            <th>Nombre de la materia</th>
-            <th>Clave</th>
-            <th>Docente</th>
-            <th>Edificio</th>
-            <th>Salon</th>
-            </tr>
-            <tbody>
-                
-            @forelse($materias as $materia)
+        <div>
 
-          <tr>
-    <th>{{$materia->NombreMateria}}</th>
-    <td>{{$materia->ClaveMateria}}</td>
-    <td>{{$materia->DocenteMateria}}</td>
-    <td>{{$materia->Edificio}}</td>
-    <td>{{$materia->Salon}}</td>
+            <section class="section">
+                <div class="table-container">
+                    <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" bgcolor=#990000>
+                        <thead>
+                            <tr>
+                                <th>Nombre de la materia</th>
+                                <th>Clave</th>
+                                <th>Docente</th>
+                                <th>Edificio</th>
+                                <th>Salon</th>
+                            </tr>
+                        <tbody>
 
-    <td>
-    <form action="{{ route('materias.destroy', $materia->id) }}"  method="POST">
-    <a class="button is-info is-mall" href="{{route('materias.edit' , $materia->id)}}">Editar</a>
-    @csrf
-    @method('DELETE')
-     <button type="submit" class="button is-primary"> eliminar </button>
-     </form>
-         </td>
-    </tr>
-             </tbody>
+                            @forelse($materias as $materia)
 
+                            <tr>
+                                <th>{{$materia->NombreMateria}}</th>
+                                <td>{{$materia->ClaveMateria}}</td>
+                                <td>{{$materia->DocenteMateria}}</td>
+                                <td>{{$materia->Edificio}}</td>
+                                <td>{{$materia->Salon}}</td>
 
-             
-       
-@empty
+                                <td>
+                                    <form action="{{ route('materias.destroy', $materia->id) }}" method="POST">
+                                        <a class="button is-info is-mall"
+                                            href="{{route('materias.edit' , $materia->id)}}">Editar</a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="button is-primary"> eliminar </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
 
-<h2><b></b>Aún no a registrado alguna materia<p></p></h2>
-<br><br>
+                        @empty
 
+                        <h2><b></b>Aun no a registrado alguna Materia<p></p>
+                        </h2>
+                        <br><br>
+                        @endforelse
 
+                        </html>
+                </div>
+            </section>
+            @endsection
 
+            <body bgcolor="white">
 
-@endforelse
-        </html>
-    </div>
-</section>
-@endsection
-      <body bgcolor="white">
-        
-      </body>
-      </table>
-    </html>
+            </body>
+            </table>
+
+            </html>
