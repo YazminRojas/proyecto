@@ -14,7 +14,7 @@
     </section>
 
     <html>
-        <body bgcolor="orange">
+        <body bgcolor="white">
         <center>
         <br><br><br>
     <div>
@@ -25,7 +25,7 @@
                 
             <div class="form-group">
                 <div class="column">
-                <label for=""><b>Nombre de la materia:</b>  </label>
+                <label for="" class="has-text-black-bis">Nombre de la materia:</label>
                 <input type="text" name="NombreMateria" id="" size="40">
                 </div>
             </div>
@@ -47,7 +47,6 @@
 <option value="No especificado">Elige el Edificio</option>
 <option value="A">A</option>
 <option value="B">B</option>
-
 <option value="C">C</option>
 <option value="D">D</option>
 <option value="E">E</option>

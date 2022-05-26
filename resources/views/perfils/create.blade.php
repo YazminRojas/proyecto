@@ -19,7 +19,7 @@
         <br><br><br>
     <div>
 
-    <form action="{{ route('datosUsuarios.store') }}"  method="post" >
+    <form action="{{ route('perfils.store') }}"  method="post" >
             @csrf
             <fieldset>
                 

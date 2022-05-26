@@ -29,20 +29,11 @@
                 <th>Docente que la imparte</th>
             </tr>
 
-            <div>
-				<label>Nombre de la película:</label>
-				<input type="text" class="input is-warning" name="nombrePelicula" placeholder="Escribe el título">
-			</div>
-			<div>
-				<label>Descripción:</label>
-				<textarea name="descripcion" class="input is-warning" placeholder="Agregue la descripción">
-                </textarea>
-			</div>
-
+            
         </thead>
         <tbody>
 
-        @forelse($datosUsuarios as $datoUsuario)
+        @forelse($perfils as $perfil)
             <tr>
                 <td>{{ $perfil->NombrePerfil }}</td>
                 <td>{{ $perfil->NombrePersona }}</td>

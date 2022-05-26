@@ -2,16 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-//use App\Http\Controllers\EdificioController;
-//Route::resources([
-   // 'edificios' => EdificioController::class,
-//]);
-
-//use App\Http\Controllers\AgendaController;
-//Route::resources([
-  //  'agendas'=> AgendaController::class,
-//]);
-
 //-------------------------------------------------------------------
 
 use App\Http\Controllers\EventoController;
@@ -19,7 +9,10 @@ Route::resources([
     'eventos'=> EventoController::class,
 ]);
 
-
+use App\Http\Controllers\PerfilController;
+Route::resources([
+    'perfils'=> PerfilController::class,
+]);
 
 //-------------------------------------------------------------------
 
@@ -43,20 +36,15 @@ Route::resources([
 ]);
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-use App\Http\Controllers\PerfilController;
-
-
-
-
 use App\Http\Controllers\CalendarioController;
 
 Route::resources([
     'calendarios' => CalendarioController::class,
 ]);
+
+//Route::get('Calendario/event/{mes}','ControllerCalendar@index_month');
+//Route::get('Calendar/event','ControllerCalendario@index');
+//------------------------------------------------------
 
 
 use App\Http\Controllers\NotaController;
@@ -65,6 +53,10 @@ Route::resources([
     'notas' => NotaController::class,
 ]);
 
+
+Route::get('/', function () {
+  return view('welcome');
+});
 
 Auth::routes();
 

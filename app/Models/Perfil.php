@@ -10,6 +10,6 @@ class Perfil extends Model
     use HasFactory;
 
     protected $fillable = [
-        'NombrePerfil','NombrePersona','ApellidoPaterno','ApellidoMaterno','NumeroTelefono','Descripcion'
+        'NombrePerfil','NombrePersona','ApellidoPaterno','ApellidoMaterno','NumeroTelefono', 'Desccripcion'
     ];
 }

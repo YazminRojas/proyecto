@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/app.min.css') }}" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 </head>

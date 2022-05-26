@@ -1,5 +1,3 @@
-index de datos del usuario :)
-
 @extends('layout.layout')
 @section('content')
 
@@ -13,15 +11,15 @@ index de datos del usuario :)
     <div class="tabs is-right  is-toggle is-toggle-rounded">
   <ul>
     <li class="is-active">
-      <a class=" is-success" href="{{url('datosUsuarios/')}}">Perfil</a></li>
-    <li><a class=" is-success" href="{{url('perfils/')}}">Configuración</a></li>
+      <a class=" is-success" href="{{url('materias/')}}">Perfil</a></li>
+    <li><a class=" is-success" href="{{url('configuracions/')}}">Configuración</a></li>
   </ul>
   </div>
   </p>
 
   
   <html>
-        <body bgcolor="green">
+        <body bgcolor="white">
         <center>
         <br><br><br>
     <div>
@@ -29,15 +27,19 @@ index de datos del usuario :)
 <section class="section">   
     <div class="table-container">
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-            <thead>
-          <tr>
-            <th>Nombre del perfil</th>
-            <th>Nombre</th>
-            <th>Apellido Paterno</th>
-            </tr>
-            <tbody>
-                
-            @forelse($datosUsuarios as $datoUsuario)
+    <center><h10>Datos del usuario </h10></center><br><br>
+
+    <div>
+				<label>Nombre del perfil:</label>
+				<input type="text" class="input is-warning" name="NombrePerfil" placeholder="Escribe un nombre de perfil">
+			</div>
+			<div>
+				<label>Descripción:</label>
+				<textarea name="Descripcion" class="input is-warning" placeholder="Agregue una descripción">
+                </textarea>
+			</div>
+
+            @forelse($perfils as $perfil)
 
           <tr>
     <th>{{$perfil->NombrePerfil}}</th>
@@ -47,9 +49,10 @@ index de datos del usuario :)
     <td>{{$perfil->NumeroTelefono}}</td>
     <td>{{$perfil->Descripcion}}</td>
 
-    <td>
-    <form action="{{ route('datosUsuarios.destroy', $datoUsuario->id) }}"  method="POST">
-    <a class="button is-info is-mall" href="{{route('datosUsuarios.edit' , $datoUsuario->id)}}">Editar</a>
+
+
+    <form action="{{ route('perfils.destroy', $perfil->id) }}"  method="POST">
+    <a class="button is-info is-mall" href="{{route('perfils.edit' , $perfil->id)}}">Editar</a>
     @csrf
     @method('DELETE')
      <button type="submit" class="button is-primary"> eliminar </button>
@@ -73,6 +76,3 @@ index de datos del usuario :)
     </div> 
 </section>
 @endsection
-
-
-

@@ -21,16 +21,16 @@
   
 
         <center>
+
+        <center>
+                <a class="button is-danger is-light" href="/materias/create" >+ Materia</a>
+            </center>
         <br><br><br>
     <div>
             
             
 <section class="section">   
     <div class="table-container">
-
-
-    
-
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" bgcolor=#990000>
             <thead>
           <tr>
@@ -56,31 +56,30 @@
     <a class="button is-info is-mall" href="{{route('materias.edit' , $materia->id)}}">Editar</a>
     @csrf
     @method('DELETE')
-     <button type="submit" class="button is-primary">Eliminar </button>
+     <button type="submit" class="button is-primary"> eliminar </button>
      </form>
          </td>
     </tr>
-    </tbody>
+             </tbody>
 
-</table>
+
              
        
 @empty
 
 <h2><b></b>Aun no a registrado alguna Materia<p></p></h2>
 <br><br>
-<!-- <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzrGmf0HAE7dG0d7XRVrXNhTRXf-rd0w1Ddw&usqp=CAU" width="400px" height="200px"></center> -->
 
-<center>
-                <a class="button is-danger is-light" href="/materias/create" >+ Materia</a>
-            </center>
+
+
 
 @endforelse
         </html>
     </div>
 </section>
 @endsection
-      <body bgcolor="orange">
+      <body bgcolor="white">
         
       </body>
+      </table>
     </html>
