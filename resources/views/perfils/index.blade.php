@@ -1,7 +1,7 @@
 @extends('layout.layout')
 @section('content')
 
-<center><article class="panel is-success" >
+<center><article class="panel is-link" >
 
 <h1 class="panel-heading">Agenda ADAM</h1></center>
   <html>
@@ -18,7 +18,7 @@
 </head>
         <body bgcolor="#f9e8fc">
     <div>
-    <section class="hero is-warning">
+    <section class="hero is-gray">
   		<div class="hero-body">
     		<p class="title">Información del usuario</p>
   		</div>

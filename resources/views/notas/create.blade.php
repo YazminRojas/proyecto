@@ -22,7 +22,7 @@
         <br><br><br>
         <center>
 
-        <form action="{{ route('materias.store') }}" method="post">
+        <form action="{{ route('notas.store') }}" method="post">
             @csrf
             <div class="form-group">
                 <select name="tipoNota" id="">
@@ -46,7 +46,6 @@
                 <label for="">Hora de Finalización:</label>
                 <input type="time" name="horaFinal">
             </div>
-            <div>
 
             
                     <br><br><br>
