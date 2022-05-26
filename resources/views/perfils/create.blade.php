@@ -14,7 +14,7 @@
     </section>
 
     <html>
-        <body bgcolor="green">
+        <body bgcolor="pink">
         <center>
         <br><br><br>
     <div>

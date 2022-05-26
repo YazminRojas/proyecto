@@ -107,7 +107,7 @@ class PerfilController extends Controller
         return redirect()->route('perfils.index');
     }
     public function datatable(){
-        $Perfils = Perfil::all();
+        $perfils = Perfil::all();
         return view('perfils.datatable', compact('perfils'));
     }
 }

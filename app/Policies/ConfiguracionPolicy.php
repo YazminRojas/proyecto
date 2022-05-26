@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Salon;
+use App\Models\Configuracion;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class SalonPolicy
+class ConfiguracionPolicy
 {
     use HandlesAuthorization;
 
@@ -25,10 +25,10 @@ class SalonPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Salon  $salon
+     * @param  \App\Models\Configuracion  $configuracion
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Salon $salon)
+    public function view(User $user, Configuracion $configuracion)
     {
         //
     }
@@ -48,10 +48,10 @@ class SalonPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Salon  $salon
+     * @param  \App\Models\Configuracion  $configuracion
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, Salon $salon)
+    public function update(User $user, Configuracion $configuracion)
     {
         //
     }
@@ -60,10 +60,10 @@ class SalonPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Salon  $salon
+     * @param  \App\Models\Configuracion  $configuracion
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, Salon $salon)
+    public function delete(User $user, Configuracion $configuracion)
     {
         //
     }
@@ -72,10 +72,10 @@ class SalonPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Salon  $salon
+     * @param  \App\Models\Configuracion  $configuracion
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, Salon $salon)
+    public function restore(User $user, Configuracion $configuracion)
     {
         //
     }
@@ -84,10 +84,10 @@ class SalonPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Salon  $salon
+     * @param  \App\Models\Configuracion  $configuracion
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, Salon $salon)
+    public function forceDelete(User $user, Configuracion $configuracion)
     {
         //
     }
