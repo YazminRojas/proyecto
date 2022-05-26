@@ -60,6 +60,17 @@ Route::resources([
 ]);
 
 
+
+
+use App\Http\Controllers\ConfiguracionController;
+
+Route::resources([
+    'configuracions' => ConfiguracionController::class,
+]);
+
+
+
+
 Route::get('/', function () {
   return view('welcome');
 });
