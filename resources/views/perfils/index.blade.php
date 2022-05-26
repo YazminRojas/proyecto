@@ -24,18 +24,6 @@
 
 <body bgcolor="#f9e8fc">
     <div>
-        <section class="hero is-warning">
-            <div class="hero-body">
-                <p class="title">Información del usuario</p>
-            </div>
-        </section>
-        <section class="section">
-            <p class="subtitle">Ingrese los datos correspondientes</p>
-            <section class="column is-half is-offset-one-quarter">
-                <section class="section">
-                    <center>
-                        <h10>Datos del usuario </h10>
-                    </center><br>
                     -----------------------------------------------------------------------
                     /* <form action="configuracion.php" method="post"> */
     <section class="hero is-gray">
@@ -49,7 +37,7 @@
     <section class="section">
     <center><h10>Datos del usuario </h10></center><br>
     -----------------------------------------------------------------------
-    /* <form action="configuracion.php" method="post"> */
+    /* <form action="Perfil.php" method="post"> */
 
                         <div>
                             <label>Nombre de usuario:</label>
