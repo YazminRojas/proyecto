@@ -35,7 +35,7 @@
 
                 </select>
                 <label for="">Colorimetria: </label>
-                <input type="color" value="#ff0000" name="colorimetria">
+                <input type="color" value="#ff0000">
 
                 <label for="">Fecha</label>
                 <input type="date" name="fecha">

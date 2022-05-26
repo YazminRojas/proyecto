@@ -40,7 +40,6 @@ class NotaController extends Controller
         $request->validate([
             'cuerpoTexto'     =>  'required',
             'tipoNota'     =>  'required',
-            'colorimetria'     =>  'required',
             'horaInicial'     =>  'required',
             'horaFinal'     =>  'required'
         ]);
@@ -48,7 +47,6 @@ class NotaController extends Controller
         $nota = new Nota([
             'cuerpoTexto'     =>  $request->get('cuerpoNota'),
             'tipoNota'     =>  $request->get('tipoNota'),
-            'colorimetria'     =>  $request->get('colorimetria'),
             'horaInicial'     =>  $request->get('horaInicial'),
             'horaFinal'     =>  $request->get('horaFinal')
         ]);
