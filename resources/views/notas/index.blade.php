@@ -37,11 +37,10 @@
                     <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
                         <thead>
                             <tr>
-                                <th>cuerpoTexto</th>
-                                <th>tipoNota</th>
-                                <th>colorimetria</th>
-                                <th>horaInicial</th>
-                                <th>horaFinal</th>
+                                <th>Nota</th>
+                                <th>Tipo de nota</th>
+                                <th>Hora Inicial</th>
+                                <th>Hora Final</th>
                                 
                             </tr>
                         <tbody>
@@ -51,7 +50,6 @@
                             <tr>
                                 <th>{{$nota->cuerpoTexto}}</th>
                                 <td>{{$nota->tipoNota}}</td>
-                                <td>{{$nota->colorimetria}}</td>
                                 <td>{{$nota->horaInicial}}</td>
                                 <td>{{$nota->horaFinal}}</td>
 
@@ -73,9 +71,6 @@
                         </h2>
                         <br><br>
 
-
-
-
                         @endforelse
 
                         </html>
@@ -86,6 +81,5 @@
             <body bgcolor="white">
 
             </body>
-            </table>
 
             </html>
