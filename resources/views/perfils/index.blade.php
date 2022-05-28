@@ -37,94 +37,101 @@
                         <center>
                             <h10>Datos del usuario </h10>
                         </center><br>
-                      
-                         <form action="Perfil.php" method="post"> 
-                            <div class="columns">
-                                <div class="column">
-                                </div>
-                                <th><label>Nombre de usuario:</label><br><br><br><br></th>
-                                <input type="text" class="input is-warning" name="NombrePerfil"
-                                    placeholder="Escribe un nombre de usuario">
-                                <div class="column">
-                                
-                                </div>
-                                <th><input type="submit" class="button is-warning" value="Editar"></th>
-                                <div class="column">
-                                   
-                                </div>
-                                <th><input type="submit" class="button is-warning" value="Guardar"></th>
-                            </div>
+
+                        <form action="Perfil.php" method="post">
 
 
 
 
-
-                            <div>
-                                <label>Nombre:</label>
-                                <input type="text" class="input is-warning" name="NombrePersona">
-                                <input type="submit" class="button is-warning" value="Editar">
-                                <input type="submit" class="button is-warning" value="Guardar">
-                            </div>
-                            <div>
-                                <label>Apellido Paterno:</label>
-                                <input type="text" class="input is-warning" name="ApellidoPaterno">
-                                <input type="submit" class="button is-warning" value="Editar">
-                                <input type="submit" class="button is-warning" value="Guardar">
-                            </div>
-                            <div>
-                                <label>Apellido Materno:</label>
-                                <input type="text" class="input is-warning" name="ApellidoMaterno">
-                                <input type="submit" class="button is-warning" value="Editar">
-                                <input type="submit" class="button is-warning" value="Guardar">
-                            </div>
-                            <div>
-                                <label>Número telefónico:</label>
-                                <input type="tel" class="input is-warning" name="NumeroTelefono"
-                                    placeholder="Ingrese su número de teléfono">
-                                <input type="submit" class="button is-warning" value="Editar">
-                                <input type="submit" class="button is-warning" value="Guardar">
-                            </div>
-                            <div>
-                                <label>Descripción:</label>
-                                <textarea name="Descripcion" class="input is-warning"
-                                    placeholder="Agregue una descripción">
-                            <input type="submit" class="button is-warning" value="Editar">
-                            <input type="submit" class="button is-warning" value="Guardar">
-                </textarea>
-                                <br><br><a class="button is-primary"
-                                    href="{{route('configuracions.index')}}">Regresar</a>
-                            </div>
-
-                            @forelse($perfils as $perfil)
-
-                            <tr>
-                                <th>{{$perfil->NombrePerfil}}</th>
-                                <td>{{$perfil->NombrePersona}}</td>
-                                <td>{{$perfil->ApellidoPaterno}}</td>
-                                <td>{{$perfil->ApellidoMaterno}}</td>
-                                <td>{{$perfil->NumeroTelefono}}</td>
-                                <td>{{$perfil->Descripcion}}</td>
-
-
-
-                                <form action="{{ route('perfils.destroy', $perfil->id) }}" method="POST">
-                                    <a class="button is-info is-mall"
-                                        href="{{route('perfils.edit' , $perfil->id)}}">Editar</a>
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="button is-primary"> eliminar </button>
-
-
+                            <div class="container">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th><label>Nombre de usuario:</label>
+                                                <input type="text" class="input is-warning" name="NombrePerfil"
+                                                    placeholder="Escribe un nombre de usuario">
+                                            </th>
+                                            <th><input type="submit" class="button is-warning" value="Editar"></th>
+                                            <th><input type="submit" class="button is-warning" value="Guardar"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><label>Nombre:</label>
+                                                <input type="text" class="input is-warning" name="NombrePersona">
+                                            </td>
+                                            <td><input type="submit" class="button is-warning" value="Editar"></td>
+                                            <td><input type="submit" class="button is-warning" value="Guardar"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Apellido Paterno:</label>
+                                                <input type="text" class="input is-warning" name="ApellidoPaterno">
+                                            </td>
+                                            <td><input type="submit" class="button is-warning" value="Editar"></td>
+                                            <td><input type="submit" class="button is-warning" value="Guardar"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Apellido Materno:</label>
+                                                <input type="text" class="input is-warning" name="ApellidoMaterno">
+                                            </td>
+                                            <td><input type="submit" class="button is-warning" value="Editar"></td>
+                                            <td><input type="submit" class="button is-warning" value="Guardar"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Número telefónico:</label>
+                                                <input type="tel" class="input is-warning" name="NumeroTelefono"
+                                                    placeholder="Ingrese su número de teléfono">
+                                            </td>
+                                            <td><input type="submit" class="button is-warning" value="Editar"></td>
+                                            <td><input type="submit" class="button is-warning" value="Guardar"></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <label>Descripción:</label>
+                                                <textarea name="Descripcion" class="input is-warning"
+                                                    placeholder="Agregue una descripción">
+                                            </td>
+                                            <td><input type="submit" bgcolor=$purple-inv ert: findColorInvert($purple) class="button is-warning" value="Editar"></td>
+                                            <td><input type="submit" class="button is-warning" value="Guardar"></td>
+                                            </textarea>
+                                        </tr>
                                     </tbody>
-                                </form>
-
-                                </td>
-                                </thead>
                                 </table>
+                            </div>
+
+
+
+                            <a class="button is-primary" href="{{route('configuracions.index')}}">Regresar</a>
     </div>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
+
+    @forelse($perfils as $perfil)
+
+    <tr>
+        <th>{{$perfil->NombrePerfil}}</th>
+        <td>{{$perfil->NombrePersona}}</td>
+        <td>{{$perfil->ApellidoPaterno}}</td>
+        <td>{{$perfil->ApellidoMaterno}}</td>
+        <td>{{$perfil->NumeroTelefono}}</td>
+        <td>{{$perfil->Descripcion}}</td>
+
+
+
+        <form action="{{ route('perfils.destroy', $perfil->id) }}" method="POST">
+            <a class="button is-info is-mall" href="{{route('perfils.edit' , $perfil->id)}}">Editar</a>
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="button is-primary"> eliminar </button>
+
+
+            </tbody>
+        </form>
+
+        </td>
+        </thead>
+        </table>
+        </div>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
 
 </html>
 @empty
