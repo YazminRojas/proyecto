@@ -31,6 +31,7 @@
                 </div>
             </section>
             <section class="section">
+                                                                                
                 
                 <section class="column is-half is-offset-one-quarter">
                     <section class="section">
@@ -54,6 +55,7 @@
                                 molde------------------------------------------------------------------------- ->
                 
                                 <form action="Perfil.php" method="post">
+                                <a class="button is-link" href="{{route('configuracions.index')}}">Regresar</a>
 
                                     <! - Información inferior del
                                         molde-----------------------------------------------------------------------------
@@ -457,8 +459,6 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <a class="button is-link"
-                                            href="{{route('configuracions.index')}}">Regresar</a>
     </div>
 
 

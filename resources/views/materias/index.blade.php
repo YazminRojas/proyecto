@@ -10,19 +10,20 @@
     <p class="panel-heading">
         Materia
     <div class="tabs is-right  is-toggle is-toggle-rounded">
-  <ul>
-    <li class="is-active">
-      <a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
-    <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
-    <li><a class=" is-success" href="{{url('configuracions/')}}">Configuración</a></li>
-  </ul>
-  </div>
-</p>
-            
+        <ul>
+            <li class="is-active">
+                <a class=" is-success" href="{{url('materias/')}}">Materias</a>
+            </li>
+            <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
+            <li><a class=" is-success" href="{{url('configuracions/')}}">Configuración</a></li>
+        </ul>
+    </div>
+    </p>
+
     <center>
 
         <center>
-            <a class="button is-danger is-light" href="/materias/create">+ Materia</a>
+            <a class="button is-danger is-light" href="/materias/create">+Materia</a>
         </center>
         <div>
 
@@ -30,7 +31,7 @@
                 <div class="table-container">
                     <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
                         <thead>
-                            <tr class="is-size-4" font-size="1.5rem" class="has-text-weight-semibold">
+                            <tr class="is-size-5" font-size="1.25rem" class="has-text-weight-semibold">
                                 <th class="has-text-centered">Id</th>
                                 <th class="has-text-centered">Nombre de la materia</th>
                                 <th class="has-text-centered">Clave</th>
