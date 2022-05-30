@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bulma.min.css">
 </head>
 
-<body bgcolor="#f9e8fc">
+<body >
     <div>
         <form action="configuracion.php" method="post">
             <section class="hero is-gray">
@@ -31,7 +31,7 @@
                 </div>
             </section>
             <section class="section">
-                <p class="subtitle">Ingrese los datos correspondientes</p>
+                
                 <section class="column is-half is-offset-one-quarter">
                     <section class="section">
 
