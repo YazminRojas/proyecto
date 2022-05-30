@@ -50,129 +50,106 @@
                             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
                             </script>
 
-
+                            <!-- Modal -->
                             <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#exampleModal">
                                 Launch demo modal
                             </button>
-
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            <div class="modal hide fade" id="exampleModal" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <!-- Modal -->
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Nombre de usuario</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            ...
+
+
+                                            <! - Casa de modo ->
+
+                                                <! - Enterprise de entrada ->
+                                                    <div class="row cl">
+                                                        <label Class="Form-Label COL-XS-3-3"> Ingrese un nombre de
+                                                            usuario:
+                                                        </label>
+                                                        <div class="formControls col-xs-6">
+                                                            <input type="text" class="input-text" placeholder=""
+                                                                name="shopName" id="perfils" autocomplete="off">
+                                                        </div>
+                                                    </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                data-dismiss="modal">Cancelar</button>
+                                            <button type="button" class="btn btn-primary">Guardar</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
+                            <!-- Modal -->
 
                             <! - Información inferior del
                                 molde------------------------------------------------------------------------- ->
 
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModal">
+                                    MODAL 2
+                                </button>
                                 <div id="addModal" class="modal hide fade" tabindex="-1" role="dialog"
                                     aria-labelledby="myModalLabel" aria-hidden="true">
 
                                     <! - Información de la cabeza del cuadro de modo ->
                                         <div class="modal-header">
-                                            <H4 ID="MyModallabel"> Añadir información </ h4>
-                                                <a class="close" data-dismiss="modal" aria-hidden="true"
-                                                    href="javascript:void();">×</a>
+                                            <h4 id="MyModallabel"> Añadir información </h4>
+                                            <a class="close" data-dismiss="modal" aria-hidden="true"
+                                                href="javascript:void();">×</a>
                                         </div>
 
                                         <! - Casa de modo ->
                                             <div class="modal-body">
                                                 <! - Enterprise de entrada ->
                                                     <div class="row cl">
-                                                        <Label Class="Form-Label COL-XS-3-3"> Nombre del taller: </
-                                                                Label>
-                                                            <div class="formControls col-xs-6">
-                                                                <input type="text" class="input-text" placeholder=""
-                                                                    name="shopName" id="perfils" autocomplete="off">
-                                                            </div>
+                                                        <label Class="Form-Label COL-XS-3-3"> Nombre del taller:
+                                                        </label>
+                                                        <div class="formControls col-xs-6">
+                                                            <input type="text" class="input-text" placeholder=""
+                                                                name="shopName" id="perfils" autocomplete="off">
+                                                        </div>
                                                     </div>
                                                     <br>
-                                                    <! - menú desplegable ->
+                                                    <! - Caja de texto ->
                                                         <div class="row cl">
-                                                            <Label Class="Form-Label COL-XS-3"> Estado de cambio: </
-                                                                    Label>
-                                                                <div class="formControls col-xs-6">
-                                                                    <select class="form-control " id="addstatus">
-                                                                        <Valor de la opción="1"> Cambio de corriente </
-                                                                                opción>
-                                                                            <Valor de opción="2"> Cambio histórico </
-                                                                                    opción>
-                                                                    </select>
+                                                            <Label Class="Form-Label COL-3"> Note: </ Label>
+                                                                <div class="formControls col-6">
+                                                                    <textarea name="perfil->NombrePerfil"
+                                                                        id="NombrePerfil" cols="" rows=""
+                                                                        Clase="TextArea"
+                                                                        Placeholder="Enter 100 caracteres"
+                                                                        DataType="* 0-100" Dragonfly="True"
+                                                                        Errormsg="¡Los comentarios no pueden exceder los 100 caracteres!"
+                                                                        onKeyUp="textarealength(this,100)"></textarea>
+                                                                    <p class="textarea-numberbar">
+                                                                        <em class="textarea-length">0</em>/100
+                                                                    </p>
                                                                 </div>
                                                         </div>
-                                                        <br>
-                                                        <! - Botón de radio de botón de radio ->
-                                                            <div class="row cl">
-                                                                <Tipo de entrada="radio" nombre="sexo" valor="masculino"
-                                                                    revisado> masculino
-                                                                    <Tipo de entrada="Radio" Nombre="Sex" Valor="Mujer">
-                                                                        Mujer
-                                                            </div>
-                                                            <br>
-                                                            <! - Caja de texto ->
-                                                                <div class="row cl">
-                                                                    <Label Class="Form-Label COL-3"> Note: </ Label>
-                                                                        <div class="formControls col-6">
-                                                                            <textarea name="house.remark" id="remark"
-                                                                                cols="" rows="" Clase="TextArea"
-                                                                                Placeholder="Enter 100 caracteres"
-                                                                                DataType="* 0-100" Dragonfly="True"
-                                                                                Errormsg="¡Los comentarios no pueden exceder los 100 caracteres!"
-                                                                                onKeyUp="textarealength(this,100)"></textarea>
-                                                                            <p class="textarea-numberbar">
-                                                                                <em class="textarea-length">0</em>/100
-                                                                            </p>
-                                                                        </div>
-                                                                </div>
-                                                                <! - Casilla de verificación ->
-                                                                    <div class="row cl">
-                                                                        <Label Class="Form-Label COL-XS-3"> Aficiones:
-                                                                            </ Label>
-                                                                            <div class="formControls col-xs-6">
-                                                                                <Tipo de
-                                                                                    entrada="Casilla de verificación"
-                                                                                    Nombre="Hobby" Valor="Sports">
-                                                                                    Deportes
-                                                                                    <Type="Checkbox" Name="Hobby"
-                                                                                        Value="SING"> CANT
-                                                                                        <Type="Checkbox" Name="Hobby"
-                                                                                            Value="Game"> juego
-                                                                                            <Tipo de
-                                                                                                entrada="Casilla de verificación"
-                                                                                                Nombre="Hobby"
-                                                                                                Valor="Lectura"> Lectura
-                                                                            </div>
-                                                                    </div>
-                                                                    <br>
+
+
                                             </div>
 
                                             <! - Información inferior del molde ->
                                                 <div class="modal-footer">
                                                     <div class="col-xs-6">
-                                                        <Button Class="BTN BTN-primaria" ID="AddConFirm"> OK </ BOTON>
+                                                        <Button Class="BTN BTN-primaria" id="AddConFirm"> OK </ BOTON>
                                                     </div>
                                                     <div class="col-xs-3">
-                                                        <button class="btn btn-primary" data-dismiss="modal"
-                                                            Aria-hidden="verdadero"> cancelar </ botón>
+                                                        <button class="btn btn-primary" data-dismiss="modal" aria
+                                                            hidden="true"> cancelar </ botón>
                                                     </div>
                                                 </div>
                                 </div>
@@ -201,9 +178,63 @@
                                                             <input type="text" class="input is-normal"
                                                                 name="NombrePerfil" readonly placeholder="Apodo">
                                                         </td>
-                                                        <td><button type="button" class="button is-link is-light"
-                                                                data-toggle="modal"
-                                                                data-target="#user-id">Editar</button></td>
+                                                        <td>
+                                                            <!-- Modal -->
+                                                            <button type="button" class="button is-link is-light"
+                                                                data-toggle="modal" data-target="#exampleModal">
+                                                                Editar
+                                                            </button>
+                                                            <!-- Modal -->
+                                                            <div class="modal hide fade" id="exampleModal" tabindex="-1"
+                                                                role="dialog" aria-labelledby="exampleModalLabel"
+                                                                aria-hidden="true">
+                                                                <!-- Modal -->
+                                                                <div class="modal-dialog" role="document">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title"
+                                                                                id="exampleModalLabel">Nombre de usuario
+                                                                            </h5>
+                                                                            <button type="button" class="close"
+                                                                                data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+
+
+                                                                            <! - Casa de modo ->
+
+                                                                                <! - Enterprise de entrada ->
+                                                                                    <div class="row cl">
+                                                                                        <label
+                                                                                            Class="Form-Label COL-XS-3-3">
+                                                                                            Ingrese un nombre de
+                                                                                            usuario:
+                                                                                        </label>
+                                                                                        <div
+                                                                                            class="formControls col-xs-6">
+                                                                                            <input type="text"
+                                                                                                class="input-text"
+                                                                                                placeholder=""
+                                                                                                name="shopName"
+                                                                                                id="perfils"
+                                                                                                autocomplete="off">
+                                                                                        </div>
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary"
+                                                                                data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-primary">Guardar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Modal -->
+                                                        </td>
                                                     </tr>
 
                                                     <tr>
