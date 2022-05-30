@@ -1,6 +1,7 @@
 @extends('layout.layout')
 @section('content')
 
+<link rel="stylesheet" href="estilos.css">
 
 <center>
     <article class="panel is-success">
@@ -29,23 +30,22 @@
                         <div class="form-group">
                             <div class="column">
                                 <label for="" class="has-text-black-bis">Nombre de la materia:</label>
-                                <input type="text" name="NombreMateria" id="" size="40">
-                            </div>
+                                <input type="text" name="NombreMateria" id="" size="40" required>
                         </div>
                         <br>
                         <div class="form-group">
                             <label for=""><b>Clave de la materia:</b></label>
-                            <input type="text" name="ClaveMateria" id="" size="37">
+                            <input type="text" name="ClaveMateria" id="" size="37" required>
                         </div>
                         <br>
                         <div class="form-group">
                             <label for=""><b>Docente que imparte la materia:</b></label>
-                            <input type="text" name="DocenteMateria" id="" size="30">
+                            <input type="text" name="DocenteMateria" id="" size="30" required>
                         </div>
 
                         <br> <br>
                         <div class="form-group">
-                            <select name="Edificio" id="">
+                            <select name="Edificio" id="" required>
 
                                 <option value="No especificado">Elige el Edificio</option>
                                 <option value="A">A</option>
@@ -64,13 +64,12 @@
                         <br><br>
                         <div class="form-group">
                             <label for=""><b> Salón:</b></label>
-                            <input type="text" name="Salon" id="" size="30">
+                            <input type="text" name="Salon" id="" size="30"required>
                         </div>
                         <div class="mt-5">
                             <input class="button is-primary" type="submit" value="Guardar">
                             <a class="button is-success" href="{{url('materias/')}}">Cancelar</a>
                         </div>
-
                     </fieldset>
                 </form>
 
@@ -79,5 +78,6 @@
     </body>
 
     </html>
+    
 
     @endsection

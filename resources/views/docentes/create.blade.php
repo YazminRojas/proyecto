@@ -26,18 +26,18 @@
             <div class="form-group">
                 <div class="column">
                 <label for=""><b>Nombre:</b>  </label>
-                <input type="text" name="Nombre" id="" size="40">
+                <input type="text" name="Nombre" id="" size="40" required>
                 </div>
             </div>
 <br>
             <div class="form-group">
                 <label for=""><b>Apellido Paterno:</b></label>
-                <input type="text" name="ApellidoPaterno" id="" size="37">
+                <input type="text" name="ApellidoPaterno" id="" size="37" required>
             </div>
 <br>
             <div class="form-group">
                 <label for=""><b>Apellido Materno:</b></label>
-                <input type="text" name="ApellidoMaterno" id="" size="30">
+                <input type="text" name="ApellidoMaterno" id="" size="30" required>
             </div>
 <br> <br>
             <div class="mt-5">

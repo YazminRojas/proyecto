@@ -1,23 +1,27 @@
 @extends('layout.layout')
 @section('content')
 
-<center><article class="panel is-link" >
-<h1 class="panel-heading">AGENDA ADAM</h1></center>
 
-<article class="panel is-gray" >
-  <p class="panel-heading">
-    Materias
+<center>
+    <article class="panel is-info">
+        <h1 class="panel-heading">AGENDA ADAM</h1>
+</center>
+
+<article class="panel is-orange">
+    <p class="panel-heading">
+        Materia
     <div class="tabs is-right  is-toggle is-toggle-rounded">
-  <ul>
-    <li class="is-active">
-      <a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
-    <li><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
-    <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
-    <li><a class=" is-success" href="{{url('configuracions/')}}">Configuración</a></li>
-  </ul>
-  </div>
-</p>
-            
+        <ul>
+            <li class="is-active">
+                <a class=" is-success" href="{{url('materias/')}}">Materias</a>
+            </li>
+            <li><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
+            <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
+            <li><a class=" is-success" href="{{url('configuracions/')}}">Configuración</a></li>
+        </ul>
+    </div>
+    </p>
+
     <center>
 
         <center>
@@ -31,6 +35,7 @@
                     <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" bgcolor=#990000>
                         <thead>
                             <tr>
+                                <th>id</th>
                                 <th>Nombre de la materia</th>
                                 <th>Clave</th>
                                 <th>Docente</th>
@@ -42,6 +47,7 @@
                             @forelse($materias as $materia)
 
                             <tr>
+                                <th>{{ $materia->id }}</th>
                                 <th>{{$materia->NombreMateria}}</th>
                                 <td>{{$materia->ClaveMateria}}</td>
                                 <td>{{$materia->DocenteMateria}}</td>
@@ -52,6 +58,7 @@
                                     <form action="{{ route('materias.destroy', $materia->id) }}" method="POST">
                                         <a class="button is-info is-mall"
                                             href="{{route('materias.edit' , $materia->id)}}">Editar</a>
+                                        <a href="{{url('compartirs/')}}" class="button is-info is-mall">Compartir</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="button is-primary"> eliminar </button>

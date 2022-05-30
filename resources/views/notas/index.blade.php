@@ -1,6 +1,7 @@
 @extends('layout.layout')
 @section('content')
 
+
 <center>
     <article class="panel is-link">
         <h1 class="panel-heading">AGENDA ADAM</h1>
@@ -34,7 +35,7 @@
 
             <section class="section">
                 <div class="table-container">
-                    <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                    <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth table-red">
                         <thead>
                             <tr>
                                 <th>Nota</th>
@@ -55,11 +56,12 @@
 
                                 <td>
                                     <form action="{{ route('notas.destroy', $nota->id) }}" method="POST">
-                                        <a class="button is-info is-mall"
-                                            href="{{route('notas.edit' , $nota->id)}}">Editar</a>
+                                        <a class="button is-info is-mall" href="{{route('notas.edit' , $nota->id)}}">Editar</a>
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="button is-primary"> eliminar </button>
+                                        <button type="submit" class="button is-danger"> eliminar </button>
+                                        <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
+                                        <a href="{{url('compartirs/')}}" class="button is-info is-mall">Pdf</a>
                                     </form>
                                 </td>
                             </tr>

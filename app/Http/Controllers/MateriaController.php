@@ -77,8 +77,8 @@ class MateriaController extends Controller
      */
     public function edit($id)
     {
-        $materia->edit();
-        return redirect()->route('materias.index');
+        $materias = Materia::all($id);
+        return view('materias.edit')->with('materias', Materia::all());
     }
 
     /**
@@ -108,4 +108,5 @@ class MateriaController extends Controller
         $Materias = Materia::all();
         return view('materias.datatable', compact('materias'));
     }
+
 }
