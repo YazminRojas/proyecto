@@ -12,7 +12,6 @@
   <ul>
     <li class="is-active">
       <a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
-    <li><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
     <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
     <li><a class=" is-success" href="{{url('configuracions/')}}">Configuración</a></li>
   </ul>
@@ -54,10 +53,11 @@
                                 <td>
                                     <form action="{{ route('materias.destroy', $materia->id) }}" method="POST">
                                         <a class="button is-info is-mall" href="{{route('materias.edit' , $materia->id)}}">Editar</a>
-                                            <a href="{{url('compartirs/')}}" class="button is-info is-mall">Compartir</a>
+                                            <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="button is-primary"> eliminar </button>
+                                        <a class="button is-info is-mall" href="/notas">Agregar nota</a>
                                     </form>
                                 </td>
                             </tr>
