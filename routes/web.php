@@ -53,7 +53,11 @@ Route::resources([
     'notas' => NotaController::class,
 ]);
 
+use App\Http\Controllers\CompartirController;
 
+Route::resources([
+    'compartirs' => CompartirController::class,
+]);
 
 
 use App\Http\Controllers\ConfiguracionController;
