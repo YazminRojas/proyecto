@@ -42,6 +42,16 @@
                             <label for=""><b>Docente que imparte la materia:</b></label>
                             <input type="text" name="DocenteMateria" id="" size="30" required>
                         </div>
+                        <br>
+                        <div class="form-group">
+                            <label for=""><b>Apellido Paterno:</b></label>
+                            <input type="text" name="ApellidoPaterno" id="" size="37" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for=""><b>Apellido Materno:</b></label>
+                            <input type="text" name="ApellidoMaterno" id="" size="37" required>
+                        </div>
 
                         <br> <br>
                         <div class="form-group">

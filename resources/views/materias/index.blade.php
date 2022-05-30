@@ -35,6 +35,8 @@
                                 <th class="has-text-centered">Nombre de la materia</th>
                                 <th class="has-text-centered">Clave</th>
                                 <th class="has-text-centered">Docente</th>
+                                <th class="has-text-centered">Apellido Paterno</th>
+                                <th class="has-text-centered">Apellido Materno</th>
                                 <th class="has-text-centered">Edificio</th>
                                 <th class="has-text-centered">Salón</th>
                                 <th class="has-text-centered">Acciones</th>
@@ -48,6 +50,8 @@
                                 <th>{{$materia->NombreMateria}}</th>
                                 <td>{{$materia->ClaveMateria}}</td>
                                 <td>{{$materia->DocenteMateria}}</td>
+                                <td>{{$materia->ApellidoPaterno}}</td>
+                                <td>{{$materia->ApellidoMaterno}}</td>
                                 <td>{{$materia->Edificio}}</td>
                                 <td>{{$materia->Salon}}</td>
 
