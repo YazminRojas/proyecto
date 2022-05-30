@@ -12,9 +12,9 @@
                            type="text" placeholder="Alias">
                 </div>
 
-                @include('notification')
+                @include('modal')
                 <button class="btn btn-success">Guardar</button>
-                <a class="btn btn-primary" href="{{route( 'perfils.index' )}}">Volver</a>
+                <a class="btn btn-primary" href="{{route('perfils.index')}}">Volver</a>
             </form>
         </div>
     </div>

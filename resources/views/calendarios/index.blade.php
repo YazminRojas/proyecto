@@ -1,3 +1,6 @@
+@extends('layout.layout')
+@section('content')
+
 <html>
 
 <head>
@@ -108,3 +111,4 @@
 </body>
 
 </html>
+@endsection

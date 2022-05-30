@@ -1,18 +1,30 @@
 @extends('layout.layout')
 @section('content')
 
-
-<center><article class="panel is-success" >
-<h1 class="panel-heading">Agenda ADAM</h1></center>
-
-<article class="panel is-warning" >
     
-  <p class="panel-heading">
-    Perfil
-    
-  </p>
-    </section>
 
+<<<<<<< HEAD
+            <div class="row">
+        <div class="col-12">
+        <form action="{{ route('perfils.store') }}"  method="post" >
+            
+                @csrf
+                <div class="form-group">
+                    <label class="label">Nombre</label>
+                    <input required autocomplete="off" name="nombre" class="form-control"
+                           type="text" placeholder="Nombre">
+                </div>
+
+                @include('modal')
+                <button class="btn btn-success">Guardar</button>
+                <a class="btn btn-primary" href="{{route(perfils.index')}}">Volver al listado</a>
+            </form>
+        </div>
+    </div>
+            
+            
+    
+=======
     <html>
         <body bgcolor="pink">
         <center>
@@ -66,4 +78,5 @@
         </body>
     </html>
    
+>>>>>>> 4dbc02e4540224b01bddddddef82e3bc1e41e9cd
 @endsection
