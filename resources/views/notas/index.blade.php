@@ -15,7 +15,6 @@
             <li class="is-active">
                 <a class=" is-success" href="{{url('materias/')}}">Materias</a>
             </li>
-            <li><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>
             <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
             <li><a class=" is-success" href="{{url('perfils/')}}">Configuración</a></li>
         </ul>
@@ -49,6 +48,7 @@
                             @forelse($notas as $nota)
 
                             <tr>
+                                <th>{{ $nota->id }}</th>
                                 <th>{{$nota->cuerpoTexto}}</th>
                                 <td>{{$nota->tipoNota}}</td>
                                 <td>{{$nota->horaInicial}}</td>

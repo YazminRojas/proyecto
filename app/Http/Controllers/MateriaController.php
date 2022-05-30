@@ -75,9 +75,9 @@ class MateriaController extends Controller
      * @param  \App\Models\Materia  $materia
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($materias)
     {
-        $materias = Materia::all($id);
+        $materias = Materia::all($materias);
         return view('materias.edit')->with('materias', Materia::all());
     }
 
@@ -104,8 +104,8 @@ class MateriaController extends Controller
         $materia->delete();
         return redirect()->route('materias.index');
     }
-    public function datatable(){
-        $Materias = Materia::all();
+    public function datatable(Materia $materia){
+        $materia = Materia::all();
         return view('materias.datatable', compact('materias'));
     }
 
