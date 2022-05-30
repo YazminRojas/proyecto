@@ -28,6 +28,9 @@ class CalendarioController extends Controller
         'mespanish' => $mespanish
       ]);
 
+
+      return view('perfils.index', ["perfils"=>Perfil::all()]);
+
   }
 
   public function index_month($month){
@@ -111,10 +114,6 @@ class CalendarioController extends Controller
     {
         //
     }
-
-
-
-
 
     public static function calendario_month($month){
         //$mes = date("Y-m");
