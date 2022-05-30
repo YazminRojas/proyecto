@@ -32,6 +32,7 @@
                     <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" bgcolor=#990000>
                         <thead>
                             <tr>
+                                <th>id</th>
                                 <th>Nombre de la materia</th>
                                 <th>Clave</th>
                                 <th>Docente</th>
@@ -43,6 +44,7 @@
                             @forelse($materias as $materia)
 
                             <tr>
+                                <th>{{ $materia->id }}</th>
                                 <th>{{$materia->NombreMateria}}</th>
                                 <td>{{$materia->ClaveMateria}}</td>
                                 <td>{{$materia->DocenteMateria}}</td>
