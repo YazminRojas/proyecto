@@ -1,12 +1,12 @@
 @extends('layout.layout')
 @section('content')
 
-<center><article class="panel is-link" >
+<center><article class="panel is-info" >
 <h1 class="panel-heading">AGENDA ADAM</h1></center>
 
-<article class="panel is-gray" >
+<article class="panel is-success" >
   <p class="panel-heading">
-    Materias
+    Materia
     <div class="tabs is-right  is-toggle is-toggle-rounded">
   <ul>
     <li class="is-active">
