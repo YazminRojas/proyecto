@@ -1,10 +1,11 @@
 @extends('layout.layout')
 @section('content')
 
-<center><article class="panel is-info" >
+
+<center><article class="panel is-link" >
 <h1 class="panel-heading">AGENDA ADAM</h1></center>
 
-<article class="panel is-success" >
+<article class="panel is-orange" >
   <p class="panel-heading">
     Materia
     <div class="tabs is-right  is-toggle is-toggle-rounded">
@@ -37,7 +38,7 @@
                                 <th>Edificio</th>
                                 <th>Salon</th>
                             </tr>
-                        <tbody>
+                        <tbody> 
 
                             @forelse($materias as $materia)
 
@@ -50,8 +51,8 @@
 
                                 <td>
                                     <form action="{{ route('materias.destroy', $materia->id) }}" method="POST">
-                                        <a class="button is-info is-mall"
-                                            href="{{route('materias.edit' , $materia->id)}}">Editar</a>
+                                        <a class="button is-info is-mall" href="{{route('materias.edit' , $materia->id)}}">Editar</a>
+                                            <a href="{{url('compartirs/')}}" class="button is-info is-mall">Compartir</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="button is-primary"> eliminar </button>
@@ -78,3 +79,5 @@
             </table>
 
             </html>
+
+            

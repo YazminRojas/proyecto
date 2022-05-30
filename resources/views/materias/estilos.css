@@ -20,3 +20,25 @@ div{
 .ms-5 {
   margin-left: (Materia * .25) !important;
 }
+
+.required::after 
+{
+    content: "*";
+    font-weight: bold;
+    color: red; 
+}
+
+.buscar{
+  position: absolute;
+  padding: Spx;
+}
+.buscar input{
+  width: 240px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #000;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+}

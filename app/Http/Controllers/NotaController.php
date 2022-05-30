@@ -29,6 +29,11 @@ class NotaController extends Controller
         return view('notas.create');
     }
 
+    public function compartir()
+    {
+        return view('notas.compartir');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -75,7 +80,8 @@ class NotaController extends Controller
      */
     public function edit(Nota $nota)
     {
-        //
+        $nota = Materia::all();
+        return view('nota.edit')->with('nota', Nota::all());
     }
 
     /**
@@ -105,4 +111,17 @@ class NotaController extends Controller
         $Materias = Nota::all();
         return view('notas.datatable', compact('notas'));
     }
+
+    public function pdf()
+{
+    //Usa el tempalte 'pdf'
+    View::template('pdf/mpdf');
+    //Modifica el nombre del archivo a descargar
+    $this->fileName = 'user-list';
+    //Modifica el título del documento PDF en la cabecera
+    $this->title = 'User List';
+    $this->download = false;
+
+    $this->data = User::all(); // data to show (model User from db)
+}
 }

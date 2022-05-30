@@ -69,8 +69,12 @@
                             <thead>
                                 <tr>
                                     <th>Nombre</th>
-                                    <th>ApellidoPaterno</th>
-                                    <th>ApellidoMaterno</th>
+                                    <<<<<<< HEAD <th>ApellidoPaterno</th>
+                                        <th>ApellidoMaterno</th>
+                                        =======
+                                        <th>Apellido Paterno</th>
+                                        <th>Apellido Materno</th>
+                                        >>>>>>> 47b8af6161e642bf31785bb605709cca2e2b0f77
                                 </tr>
                             <tbody>
 
@@ -87,9 +91,12 @@
                                         <form action="{{ route('docentes.destroy', $docente->id) }}" method="POST">
                                             <a class="button is-info is-mall"
                                                 href="{{route('docentes.edit' , $docente->id)}}">Editar</a>
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="button is-primary"> eliminar </button>
+                                            <<<<<<< HEAD=======<a href="{{url('compartirs/')}}"
+                                                class="button is-info is-mall">Compartir</a>
+                                                >>>>>>> 47b8af6161e642bf31785bb605709cca2e2b0f77
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="button is-primary"> eliminar </button>
                                         </form>
                                     </td>
                                 </tr>

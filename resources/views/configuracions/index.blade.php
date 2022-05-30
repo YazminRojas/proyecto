@@ -8,6 +8,34 @@
 
 <table align="center" class="table-info">
 
+<<<<<<< HEAD
+  <?php if (!count($data)) : ?>
+    <h2>No hay ningún registro</h2> 
+<?php else : ?>
+    <table class="report">
+    <caption class="caption"><?= $title ?></caption>
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Birthdate</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <?php foreach ($data as $item) : ?>
+                <tr>
+                    <td><?= $item->first_name ?></td>
+                    <td><?= $item->last_name ?></td>
+                    <td><?= $item->email ?></td>
+                    <td><?= $item->birthdate ?></td>
+                </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
+<?php endif ?>
+
+=======
     <tbody>
         <tr>
             <th scope="row"><img
@@ -20,6 +48,7 @@
                     <option value="" style=" font-weight: bold;">Bold</option>
                     <option value="" style=" font-family: Georgia, 'Times New Roman', serif;">Times New Roman</option>
                     <option value="" styele="sans-serif">Arial</option>
+>>>>>>> 2f8c76c194d538a130b9a6d394dbcaca714573e2
 
                 </select>
             </td>
