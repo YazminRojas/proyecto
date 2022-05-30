@@ -7,7 +7,7 @@
 
 <article class="panel is-orange" >
   <p class="panel-heading">
-    Materias
+    Materia
     <div class="tabs is-right  is-toggle is-toggle-rounded">
   <ul>
     <li class="is-active">

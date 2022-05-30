@@ -60,7 +60,7 @@
 <br> <br>
             <div class="mt-5">
                 <input class="btn btn-primary" type="submit" value="Guardar"
-                <a class="button is-success" href="{{url('materias/')}}">Cancelar</a>
+                <a class="button is-success" href="{{url('perfils/')}}">Cancelar</a>
             </div>
     </form>
         </body>

@@ -9,6 +9,8 @@ class Perfil extends Model
 {
     use HasFactory;
 
+    protected $table = "perfils";
+
     protected $fillable = [
         'NombrePerfil','NombrePersona','ApellidoPaterno','ApellidoMaterno','NumeroTelefono', 'Desccripcion'
     ];
