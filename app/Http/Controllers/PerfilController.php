@@ -60,6 +60,7 @@ class PerfilController extends Controller
         return redirect()->route('perfils.index');
     }
 
+
     /**
      * Display the specified resource.
      *
@@ -79,8 +80,11 @@ class PerfilController extends Controller
      */
     public function edit(Perfil $perfil)
     {
-        $perfil->edit();
-        return redirect()->route('perfils.index');
+        //$perfil->edit();
+        //return redirect()->route('perfils.index');
+
+        return view("perfils.edit", ["perfil" => $perfil,
+    ]);
     }
 
     /**
@@ -92,7 +96,8 @@ class PerfilController extends Controller
      */
     public function update(UpdatePerfilRequest $request, Perfil $perfil)
     {
-        //
+    $perfil->fill($request->input())->saveOrFail();
+    return redirect()->route("perfils.index")->with(["mensaje" => "Información actualizada"]);
     }
 
     /**
