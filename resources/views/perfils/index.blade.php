@@ -79,15 +79,16 @@
                                                         </label>
                                                         <div class="formControls col-xs-6">
                                                             <input type="text" class="input-text" placeholder=""
-                                                                name="shopName" id="perfils" autocomplete="off">
+                                                                name="NombrePerfil" id="AddConFirm" autocomplete="off">
                                                         </div>
                                                     </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
+                                            <button type="button" class="btn btn-secondary" 
                                                 data-dismiss="modal">Cancelar</button>
-                                            <button type="button" class="btn btn-primary">Guardar</button>
+                                            <button type="button" class="btn btn-primary" id="AddConFirm">Guardar</button>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -122,31 +123,17 @@
                                                         </div>
                                                     </div>
                                                     <br>
-                                                    <! - Caja de texto ->
-                                                        <div class="row cl">
-                                                            <Label Class="Form-Label COL-3"> Note: </ Label>
-                                                                <div class="formControls col-6">
-                                                                    <textarea name="perfil->NombrePerfil"
-                                                                        id="NombrePerfil" cols="" rows=""
-                                                                        Clase="TextArea"
-                                                                        Placeholder="Enter 100 caracteres"
-                                                                        DataType="* 0-100" Dragonfly="True"
-                                                                        Errormsg="¡Los comentarios no pueden exceder los 100 caracteres!"
-                                                                        onKeyUp="textarealength(this,100)"></textarea>
-                                                                    <p class="textarea-numberbar">
-                                                                        <em class="textarea-length">0</em>/100
-                                                                    </p>
-                                                                </div>
-                                                        </div>
-
-
                                             </div>
 
                                             <! - Información inferior del molde ->
                                                 <div class="modal-footer">
+
+
                                                     <div class="col-xs-6">
                                                         <Button Class="BTN BTN-primaria" id="AddConFirm"> OK </ BOTON>
                                                     </div>
+
+
                                                     <div class="col-xs-3">
                                                         <button class="btn btn-primary" data-dismiss="modal" aria
                                                             hidden="true"> cancelar </ botón>
@@ -236,6 +223,7 @@
                                                             <!-- Modal -->
                                                         </td>
                                                     </tr>
+                                                    <br>
 
                                                     <tr>
                                                         <td><label>Nombre:</label>
