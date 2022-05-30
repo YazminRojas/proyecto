@@ -2,7 +2,7 @@
 @section('content')
 
 <center>
-    <article class="panel is-link"">
+    <article class="panel is-link">
 
         <h1 class=" panel-heading">Agenda ADAM</h1>
 </center>
@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bulma.min.css">
 </head>
 
-<body bgcolor="#f9e8fc">
+<body >
     <div>
         <form action="configuracion.php" method="post">
             <section class="hero is-gray">
@@ -31,7 +31,7 @@
                 </div>
             </section>
             <section class="section">
-                <p class="subtitle">Ingrese los datos correspondientes</p>
+                
                 <section class="column is-half is-offset-one-quarter">
                     <section class="section">
 
@@ -50,113 +50,9 @@
                             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
                             </script>
 
-                            <!-- Modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#exampleModal">
-                                Launch demo modal
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal hide fade" id="exampleModal" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <!-- Modal -->
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Nombre de usuario</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-
-
-                                            <! - Casa de modo ->
-
-                                                <! - Enterprise de entrada ->
-                                                    <div class="row cl">
-                                                        <label Class="Form-Label COL-XS-3-3"> Ingrese un nombre de
-                                                            usuario:
-                                                        </label>
-                                                        <div class="formControls col-xs-6">
-                                                            <input type="text" class="input-text" placeholder=""
-                                                                name="shopName" id="perfils" autocomplete="off">
-                                                        </div>
-                                                    </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Cancelar</button>
-                                            <button type="button" class="btn btn-primary">Guardar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Modal -->
-
                             <! - Información inferior del
                                 molde------------------------------------------------------------------------- ->
-
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModal">
-                                    MODAL 2
-                                </button>
-                                <div id="addModal" class="modal hide fade" tabindex="-1" role="dialog"
-                                    aria-labelledby="myModalLabel" aria-hidden="true">
-
-                                    <! - Información de la cabeza del cuadro de modo ->
-                                        <div class="modal-header">
-                                            <h4 id="MyModallabel"> Añadir información </h4>
-                                            <a class="close" data-dismiss="modal" aria-hidden="true"
-                                                href="javascript:void();">×</a>
-                                        </div>
-
-                                        <! - Casa de modo ->
-                                            <div class="modal-body">
-                                                <! - Enterprise de entrada ->
-                                                    <div class="row cl">
-                                                        <label Class="Form-Label COL-XS-3-3"> Nombre del taller:
-                                                        </label>
-                                                        <div class="formControls col-xs-6">
-                                                            <input type="text" class="input-text" placeholder=""
-                                                                name="shopName" id="perfils" autocomplete="off">
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                    <! - Caja de texto ->
-                                                        <div class="row cl">
-                                                            <Label Class="Form-Label COL-3"> Note: </ Label>
-                                                                <div class="formControls col-6">
-                                                                    <textarea name="perfil->NombrePerfil"
-                                                                        id="NombrePerfil" cols="" rows=""
-                                                                        Clase="TextArea"
-                                                                        Placeholder="Enter 100 caracteres"
-                                                                        DataType="* 0-100" Dragonfly="True"
-                                                                        Errormsg="¡Los comentarios no pueden exceder los 100 caracteres!"
-                                                                        onKeyUp="textarealength(this,100)"></textarea>
-                                                                    <p class="textarea-numberbar">
-                                                                        <em class="textarea-length">0</em>/100
-                                                                    </p>
-                                                                </div>
-                                                        </div>
-
-
-                                            </div>
-
-                                            <! - Información inferior del molde ->
-                                                <div class="modal-footer">
-                                                    <div class="col-xs-6">
-                                                        <Button Class="BTN BTN-primaria" id="AddConFirm"> OK </ BOTON>
-                                                    </div>
-                                                    <div class="col-xs-3">
-                                                        <button class="btn btn-primary" data-dismiss="modal" aria
-                                                            hidden="true"> cancelar </ botón>
-                                                    </div>
-                                                </div>
-                                </div>
-
-
-
-
+                
                                 <form action="Perfil.php" method="post">
 
                                     <! - Información inferior del
@@ -236,14 +132,68 @@
                                                             <!-- Modal -->
                                                         </td>
                                                     </tr>
+                                                    <br>
 
                                                     <tr>
                                                         <td><label>Nombre:</label>
                                                             <input type="text" class="input is-normal"
                                                                 name="NombrePersona" readonly>
                                                         </td>
-                                                        <td><input type="submit" class="button is-link is-light"
-                                                                value="Editar">
+                                                        <td>
+                                                            <!-- Modal -->
+                                                            <button type="button" class="button is-link is-light"
+                                                                data-toggle="modal" data-target="#exampleModal">
+                                                                Editar
+                                                            </button>
+                                                            <!-- Modal -->
+                                                            <div class="modal hide fade" id="exampleModal" tabindex="-1"
+                                                                role="dialog" aria-labelledby="exampleModalLabel"
+                                                                aria-hidden="true">
+                                                                <!-- Modal -->
+                                                                <div class="modal-dialog" role="document">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title"
+                                                                                id="exampleModalLabel">Nombre
+                                                                            </h5>
+                                                                            <button type="button" class="close"
+                                                                                data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+
+
+                                                                            <! - Casa de modo ->
+
+                                                                                <! - Enterprise de entrada ->
+                                                                                    <div class="row cl">
+                                                                                        <label
+                                                                                            Class="Form-Label COL-XS-3-3">
+                                                                                            Ingrese su nombre:
+                                                                                        </label>
+                                                                                        <div
+                                                                                            class="formControls col-xs-6">
+                                                                                            <input type="text"
+                                                                                                class="input-text"
+                                                                                                placeholder=""
+                                                                                                name="shopName"
+                                                                                                id="perfils"
+                                                                                                autocomplete="off">
+                                                                                        </div>
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary"
+                                                                                data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-primary">Guardar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Modal -->
                                                         </td>
 
                                                     </tr>
@@ -252,8 +202,61 @@
                                                             <input type="text" class="input is-normal"
                                                                 name="ApellidoPaterno" readonly>
                                                         </td>
-                                                        <td><input type="submit" class="button is-link is-light"
-                                                                value="Editar">
+                                                        <td>
+                                                            <!-- Modal -->
+                                                            <button type="button" class="button is-link is-light"
+                                                                data-toggle="modal" data-target="#exampleModal">
+                                                                Editar
+                                                            </button>
+                                                            <!-- Modal -->
+                                                            <div class="modal hide fade" id="exampleModal" tabindex="-1"
+                                                                role="dialog" aria-labelledby="exampleModalLabel"
+                                                                aria-hidden="true">
+                                                                <!-- Modal -->
+                                                                <div class="modal-dialog" role="document">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title"
+                                                                                id="exampleModalLabel">Apellido Paterno
+                                                                            </h5>
+                                                                            <button type="button" class="close"
+                                                                                data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+
+
+                                                                            <! - Casa de modo ->
+
+                                                                                <! - Enterprise de entrada ->
+                                                                                    <div class="row cl">
+                                                                                        <label
+                                                                                            Class="Form-Label COL-XS-3-3">
+                                                                                            Ingrese su apellido paterno:
+                                                                                        </label>
+                                                                                        <div
+                                                                                            class="formControls col-xs-6">
+                                                                                            <input type="text"
+                                                                                                class="input-text"
+                                                                                                placeholder=""
+                                                                                                name="shopName"
+                                                                                                id="perfils"
+                                                                                                autocomplete="off">
+                                                                                        </div>
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary"
+                                                                                data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-primary">Guardar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Modal -->
                                                         </td>
 
                                                     </tr>
@@ -262,8 +265,61 @@
                                                             <input type="text" class="input is-normal"
                                                                 name="ApellidoMaterno" readonly>
                                                         </td>
-                                                        <td><input type="submit" class="button is-link is-light"
-                                                                value="Editar">
+                                                        <td>
+                                                            <!-- Modal -->
+                                                            <button type="button" class="button is-link is-light"
+                                                                data-toggle="modal" data-target="#exampleModal">
+                                                                Editar
+                                                            </button>
+                                                            <!-- Modal -->
+                                                            <div class="modal hide fade" id="exampleModal" tabindex="-1"
+                                                                role="dialog" aria-labelledby="exampleModalLabel"
+                                                                aria-hidden="true">
+                                                                <!-- Modal -->
+                                                                <div class="modal-dialog" role="document">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title"
+                                                                                id="exampleModalLabel">Apellido Materno
+                                                                            </h5>
+                                                                            <button type="button" class="close"
+                                                                                data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+
+
+                                                                            <! - Casa de modo ->
+
+                                                                                <! - Enterprise de entrada ->
+                                                                                    <div class="row cl">
+                                                                                        <label
+                                                                                            Class="Form-Label COL-XS-3-3">
+                                                                                            Ingrese su apellido materno:
+                                                                                        </label>
+                                                                                        <div
+                                                                                            class="formControls col-xs-6">
+                                                                                            <input type="text"
+                                                                                                class="input-text"
+                                                                                                placeholder=""
+                                                                                                name="shopName"
+                                                                                                id="perfils"
+                                                                                                autocomplete="off">
+                                                                                        </div>
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary"
+                                                                                data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-primary">Guardar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Modal -->
                                                         </td>
 
                                                     </tr>
@@ -273,8 +329,62 @@
                                                                 name="NumeroTelefono"
                                                                 placeholder="Ingrese su número de teléfono" readonly>
                                                         </td>
-                                                        <td><input type="submit" class="button is-link is-light"
-                                                                value="Editar">
+                                                        <td>
+                                                            <!-- Modal -->
+                                                            <button type="button" class="button is-link is-light"
+                                                                data-toggle="modal" data-target="#exampleModal">
+                                                                Editar
+                                                            </button>
+                                                            <!-- Modal -->
+                                                            <div class="modal hide fade" id="exampleModal" tabindex="-1"
+                                                                role="dialog" aria-labelledby="exampleModalLabel"
+                                                                aria-hidden="true">
+                                                                <!-- Modal -->
+                                                                <div class="modal-dialog" role="document">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title"
+                                                                                id="exampleModalLabel">Número de
+                                                                                teléfono
+                                                                            </h5>
+                                                                            <button type="button" class="close"
+                                                                                data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+
+
+                                                                            <! - Casa de modo ->
+
+                                                                                <! - Enterprise de entrada ->
+                                                                                    <div class="row cl">
+                                                                                        <label
+                                                                                            Class="Form-Label COL-XS-3-3">
+                                                                                            Ingrese su número telefónico
+                                                                                        </label>
+                                                                                        <div
+                                                                                            class="formControls col-xs-6">
+                                                                                            <input type="text"
+                                                                                                class="input-text"
+                                                                                                placeholder=""
+                                                                                                name="shopName"
+                                                                                                id="perfils"
+                                                                                                autocomplete="off">
+                                                                                        </div>
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary"
+                                                                                data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-primary">Guardar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Modal -->
                                                         </td>
 
                                                     </tr>
@@ -285,8 +395,61 @@
                                                                 readonly></textarea>
                                                         </td>
 
-                                                        <td><input type="submit" class="button is-link is-light"
-                                                                value="Editar">
+                                                        <td>
+                                                            <!-- Modal -->
+                                                            <button type="button" class="button is-link is-light"
+                                                                data-toggle="modal" data-target="#exampleModal">
+                                                                Editar
+                                                            </button>
+                                                            <!-- Modal -->
+                                                            <div class="modal hide fade" id="exampleModal" tabindex="-1"
+                                                                role="dialog" aria-labelledby="exampleModalLabel"
+                                                                aria-hidden="true">
+                                                                <!-- Modal -->
+                                                                <div class="modal-dialog" role="document">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title"
+                                                                                id="exampleModalLabel">Descripción
+                                                                            </h5>
+                                                                            <button type="button" class="close"
+                                                                                data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+
+
+                                                                            <! - Casa de modo ->
+
+                                                                                <! - Enterprise de entrada ->
+                                                                                    <div class="row cl">
+                                                                                        <label
+                                                                                            Class="Form-Label COL-XS-3-3">
+                                                                                            Ingrese una descripción:
+                                                                                        </label>
+                                                                                        <div
+                                                                                            class="formControls col-xs-6">
+                                                                                            <input type="text"
+                                                                                                class="input-text"
+                                                                                                placeholder=""
+                                                                                                name="shopName"
+                                                                                                id="perfils"
+                                                                                                autocomplete="off">
+                                                                                        </div>
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary"
+                                                                                data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-primary">Guardar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Modal -->
                                                         </td>
 
 
@@ -294,7 +457,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <a class="button is-primary"
+                                        <a class="button is-link"
                                             href="{{route('configuracions.index')}}">Regresar</a>
     </div>
 

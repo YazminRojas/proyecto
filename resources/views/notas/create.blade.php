@@ -25,6 +25,9 @@
             <form action="{{ route('notas.store') }}" method="post">
                 @csrf
                 <div class="form-group">
+                    <div class="colunm">
+
+                    
                     <select name="tipoNota" id="">
 
                         <option value="No especificado">Tipo de Nota</option>
@@ -34,19 +37,35 @@
                         <option value="Otro">Otro</option>
 
                     </select>
-                    <label for="">Colorimetria: </label>
-                    <input type="color" value="#ff0000">
-
-                    <label for="">Fecha</label>
-                    <input type="date" name="fecha">
-
-                    <label for="">Hora de Inicio:</label>
-                    <input type="time" name="horaInicial">
-
-                    <label for="">Hora de Finalización:</label>
-                    <input type="time" name="horaFinal">
                 </div>
 
+                <div class="form-group">
+                <label for="">Colorimetria: </label>
+                <input type="color" value="#ff0000">
+                </div>
+
+                <div class="form-group">
+                    <div>
+                    <label for="">Fecha</label>
+                    <input type="date" name="fecha">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div>
+                    <label for="">Hora de Inicio:</label>
+                    <input type="time" name="horaInicial">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                    <label for="">Hora de Finalización:</label>
+                    <input type="time" name="horaFinal">
+                    </div>
+                </div>
+                </div>
 
                 <br><br><br>
 
