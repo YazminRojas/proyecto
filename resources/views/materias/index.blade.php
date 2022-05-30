@@ -24,7 +24,7 @@
     <center>
 
         <center>
-            <a class="button is-danger is-light" href="/materias/create">+ Materia</a>
+            <a class="button is-danger is-light" href="/materias/create">+Materia</a>
         </center>
         <div>
 
