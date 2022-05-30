@@ -15,8 +15,9 @@ class PerfilController extends Controller
      */
     public function index()
     {
-        $perfils = Perfil::all();
-        return view('perfils.index')->with('perfils', Perfil::all());
+        //$perfils = Perfil::all();
+        //return view('perfils.index')->with('perfils', Perfil::all());
+        return view('perfils.index', ["perfils"=>Perfil::all()]);
     }
 
     /**
@@ -37,27 +38,14 @@ class PerfilController extends Controller
      */
     public function store(StorePerfilRequest $request)
     {
-        $request->validate([
-            'NombrePerfil'      =>  'required',
-            'NombrePersona'     =>  'required',
-            'ApellidoPaterno'   =>  'required',
-            'ApellidoMaterno'   =>  'required',
-            'NumeroTelefono'    =>  'required',
-            'Descripcion'       =>  'required'
+        $perfil = new Perfil($request->input());
+        $perfil->saveOrFail();
+        return redirect()->route('perfils.index')->with(["mensaje" => "Nivel creado",
         ]);
 
-        $perfil = new Perfil([
-            'NombrePerfil'    =>  $request->get('NombrePerfil'),
-            'NombrePersona'   =>  $request->get('NombrePersona'),
-            'ApellidoPaterno' =>  $request->get('ApellidoPaterno'),
-            'ApellidoMaterno' =>  $request->get('ApellidoMaterno'),
-            'NumeroTelefono'  =>  $request->get('NumeroTelefono'),
-            'Descripcion'     =>  $request->get('Descripcion')
-        ]);
+        //$perfil->save();
 
-        $perfil->save();
-
-        return redirect()->route('perfils.index');
+        //return redirect()->route('perfils.index');
     }
 
 
@@ -97,7 +85,7 @@ class PerfilController extends Controller
     public function update(UpdatePerfilRequest $request, Perfil $perfil)
     {
     $perfil->fill($request->input())->saveOrFail();
-    return redirect()->route("perfils.index")->with(["mensaje" => "Información actualizada"]);
+    return redirect()->route('perfils.index')->with(["mensaje" => "Información actualizada"]);
     }
 
     /**
@@ -109,10 +97,11 @@ class PerfilController extends Controller
     public function destroy(Perfil $perfil)
     {
         $perfil->delete();
-        return redirect()->route('perfils.index');
+        return redirect()->route('perfils.index')->with(["mensaje" => "Nivel eliminado",
+    ]);
     }
-    public function datatable(){
-        $perfils = Perfil::all();
-        return view('perfils.datatable', compact('perfils'));
-    }
+    //public function datatable(){
+      //  $perfils = Perfil::all();
+        //return view('perfils.datatable', compact('perfils'));
+    //}
 }
