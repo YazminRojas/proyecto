@@ -4,7 +4,9 @@
 
 <center>
     <article class="panel is-info">
-        <h1 class="panel-heading">AGENDA ADAM</h1>
+        <h1 class="panel-heading">
+            <img src="https://cdn-icons-png.flaticon.com/512/830/830573.png" width="50px" heigth="50px">AGENDA ADAM
+        </h1>
 </center>
 <article class="panel is-success">
     <p class="panel-heading">
@@ -37,6 +39,8 @@
                                 <th class="has-text-centered">Nombre de la materia</th>
                                 <th class="has-text-centered">Clave</th>
                                 <th class="has-text-centered">Docente</th>
+                                <th class="has-text-centered">Apellido Paterno</th>
+                                <th class="has-text-centered">Apellido Materno</th>
                                 <th class="has-text-centered">Edificio</th>
                                 <th class="has-text-centered">Salón</th>
                                 <th class="has-text-centered">Acciones</th>
@@ -50,17 +54,33 @@
                                 <th>{{$materia->NombreMateria}}</th>
                                 <td>{{$materia->ClaveMateria}}</td>
                                 <td>{{$materia->DocenteMateria}}</td>
+                                <td>{{$materia->ApellidoPaterno}}</td>
+                                <td>{{$materia->ApellidoMaterno}}</td>
                                 <td>{{$materia->Edificio}}</td>
                                 <td>{{$materia->Salon}}</td>
 
                                 <td>
                                     <form action="{{ route('materias.destroy', $materia->id) }}" method="POST">
+<<<<<<< HEAD
                                         <a class="button is-info is-mall" href="/materias/{{$materia->id}}/edit">Editar</a>
                                             <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
 
+=======
+<<<<<<< HEAD
+                                        <a class="button is-info is-mall" href="{{route('materias.edit' , $materia->id)}}">Editar</a>
+                                            <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="button is-primary"> eliminar </button>
+=======
+                                        <a class="button is-warning is-mall"
+                                            href="{{route('materias.edit' , $materia->id)}}">Editar</a>
+                                        <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
+>>>>>>> 013f40f3003f1b53036746c39cafb7a65d869eb9
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="button is-danger"> Eliminar </button>
+>>>>>>> 03344145b0ca3fdc90d8cd0cb3bbe34de4077d05
                                         <a class="button is-info is-mall" href="/notas">Agregar nota</a>
                                     </form>
                                 </td>

@@ -54,9 +54,7 @@
                             <label for="tipoUsuario"
                                 class="col-md-4 col-form-label text-md-end">{{ __('Tipo de usuario') }}</label>
                             <center>
-                                <div class="select is-danger">
-                                    <select class="form-select" aria-label="Default select example"
-                                        style="width: 300px;">
+                                <select class="form-select" aria-label="Default select example" style="width: 300px;">
                             </center>
                             <option value="1">Alumno</option>
                             <option value="3">Docente</option>

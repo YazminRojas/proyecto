@@ -27,6 +27,8 @@
                 <th>Nombre de la Materia</th>
                 <th>Clave de la Materia</th>
                 <th>Docente que la imparte</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
             </tr>
         </thead>
         <tbody>

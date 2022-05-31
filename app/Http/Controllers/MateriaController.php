@@ -44,6 +44,8 @@ class MateriaController extends Controller
             'NombreMateria'     =>  'required',
             'ClaveMateria'     =>  'required',
             'DocenteMateria'     =>  'required',
+            'ApellidoPaterno'     =>  'required',
+            'ApellidoMaterno'     =>  'required',
             'Edificio'     =>  'required',
             'Salon'     =>  'required'
         ]);
@@ -52,6 +54,8 @@ class MateriaController extends Controller
             'NombreMateria'     =>  $request->get('NombreMateria'),
             'ClaveMateria'     =>  $request->get('ClaveMateria'),
             'DocenteMateria'     =>  $request->get('DocenteMateria'),
+            'ApellidoPaterno'     =>  $request->get('ApellidoPaterno'),
+            'ApellidoMaterno'     =>  $request->get('ApellidoMaterno'),
             'Edificio'     =>  $request->get('Edificio'),
             'Salon'     =>  $request->get('Salon')
         ]);
@@ -81,6 +85,7 @@ class MateriaController extends Controller
      * @param  \App\Models\Materia  $materia
      * @return \Illuminate\Http\Response
      */
+<<<<<<< HEAD
     public function edit($materias)
     {
         $materias = Materia::all($materias);
@@ -92,6 +97,11 @@ class MateriaController extends Controller
 
         //return view('materias.edit', ['materias' => $materia,
     //]);
+=======
+    public function edit(Materia $id){
+        $materias = Materia::findOrFail($id);
+        return view('materias.edit', compact('materia'));
+>>>>>>> 013f40f3003f1b53036746c39cafb7a65d869eb9
     }
 
     /**
