@@ -33,6 +33,29 @@
                             <div class="column">
                                 <label for="" class="has-text-black-bis">Nombre de la materia:</label>
                                 <input type="text" name="NombreMateria" id="" size="40" required>
+<<<<<<< HEAD
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for=""><b>Clave de la materia:</b></label>
+                            <input type="text" name="ClaveMateria" id="" size="37" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for=""><b>Docente que imparte la materia:</b></label>
+                            <input type="text" name="DocenteMateria" id="" size="30" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for=""><b>Apellido Paterno:</b></label>
+                            <input type="text" name="ApellidoPaterno" id="" size="37" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for=""><b>Apellido Materno:</b></label>
+                            <input type="text" name="ApellidoMaterno" id="" size="37" required>
+                        </div>
+=======
                             </div>
                             <br>
                             <div class="form-group">
@@ -44,6 +67,7 @@
                                 <label for="">Docente que imparte la materia:</label>
                                 <input type="text" name="DocenteMateria" id="" size="30" required>
                             </div>
+>>>>>>> 03344145b0ca3fdc90d8cd0cb3bbe34de4077d05
 
                             <br> <br>
                             <div class="form-group">
