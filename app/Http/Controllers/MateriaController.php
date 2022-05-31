@@ -79,9 +79,10 @@ class MateriaController extends Controller
      * @param  \App\Models\Materia  $materia
      * @return \Illuminate\Http\Response
      */
-    public function edit(Materia $id){
-        $materias = Materia::findOrFail($id);
-        return view('materias.edit', compact('materia'));
+    public function edit($id){
+        $materias=Materia::findOrFail($id);
+
+        return view('materias.edit', compact('materias'));
     }
 
     /**
@@ -91,9 +92,14 @@ class MateriaController extends Controller
      * @param  \App\Models\Materia  $materia
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateMateriaRequest $request, Materia $materia)
+    public function update(Request $request, $id)
     {
-        //
+        
+
+
+        $materias=Materia::findOrFail($id);
+
+        return view('materias.edit', compact('materias'));
     }
 
     /**

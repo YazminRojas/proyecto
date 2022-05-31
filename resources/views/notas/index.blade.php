@@ -38,10 +38,12 @@
                     <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth table-red">
                         <thead>
                             <tr>
+                                <th>id</th>
                                 <th>Nota</th>
                                 <th>Tipo de nota</th>
                                 <th>Hora Inicial</th>
                                 <th>Hora Final</th>
+                                <th class="has-text-centered">Acciones</th>
 
                             </tr>
                         <tbody>
@@ -63,7 +65,7 @@
                                         @method('DELETE')
                                         <button type="submit" class="button is-danger"> eliminar </button>
                                         <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
-                                        <a href="{{url('compartirs/')}}" class="button is-info is-mall">Pdf</a>
+                                        <a href="index.php" class="button is-info is-mall">pdf</a>
                                     </form>
                                 </td>
                             </tr>

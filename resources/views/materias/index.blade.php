@@ -59,20 +59,11 @@
 
                                 <td>
                                     <form action="{{ route('materias.destroy', $materia->id) }}" method="POST">
-<<<<<<< HEAD
                                         <a class="button is-info is-mall" href="{{route('materias.edit' , $materia->id)}}">Editar</a>
-                                            <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
+                                            <a href="edit.blade.php" class="button is-success is-mall">Compartir</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="button is-primary"> eliminar </button>
-=======
-                                        <a class="button is-warning is-mall"
-                                            href="{{route('materias.edit' , $materia->id)}}">Editar</a>
-                                        <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="button is-danger"> Eliminar </button>
->>>>>>> 03344145b0ca3fdc90d8cd0cb3bbe34de4077d05
                                         <a class="button is-info is-mall" href="/notas">Agregar nota</a>
                                     </form>
                                 </td>
