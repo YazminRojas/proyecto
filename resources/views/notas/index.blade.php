@@ -3,14 +3,15 @@
 
 
 <center>
-    <article class="panel is-link">
+    <article class="panel is-info">
         <h1 class="panel-heading">AGENDA ADAM</h1>
 </center>
 
-<article class="panel is-grey">
+<article class="panel is-success">
     <p class="panel-heading">
         Notas
     <div class="tabs is-right  is-toggle is-toggle-rounded">
+        <a class="button is-info is-warning" href="{{url('materias/')}}">Regresar</a>
         <ul>
             <li class="is-active">
                 <a class=" is-success" href="{{url('materias/')}}">Materias</a>
@@ -41,7 +42,7 @@
                                 <th>Tipo de nota</th>
                                 <th>Hora Inicial</th>
                                 <th>Hora Final</th>
-                                
+
                             </tr>
                         <tbody>
 
@@ -56,10 +57,11 @@
 
                                 <td>
                                     <form action="{{ route('notas.destroy', $nota->id) }}" method="POST">
-                                        <a class="button is-info is-mall" href="{{route('notas.edit' , $nota->id)}}">Editar</a>
+                                        <a class="button is-info is-mall"
+                                            href="{{route('notas.edit' , $nota->id)}}">Editar</a>
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="button is-danger"> eliminar </button>
+                                        <button type="submit" class="button is-danger"> Eliminar </button>
                                         <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
                                         <a href="{{url('compartirs/')}}" class="button is-info is-mall">Pdf</a>
                                     </form>
@@ -80,8 +82,4 @@
             </section>
             @endsection
 
-            <body bgcolor="white">
-
-            </body>
-
-            </html>
+            

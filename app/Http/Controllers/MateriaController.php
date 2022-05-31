@@ -17,6 +17,9 @@ class MateriaController extends Controller
     {
         $materias = Materia::all();
         return view('materias.index')->with('materias', Materia::all());
+
+        //$materias = Materia::all();
+        //return view('materias.index')->with('materias',$materias);
     }
 
     /**
@@ -53,9 +56,12 @@ class MateriaController extends Controller
             'Salon'     =>  $request->get('Salon')
         ]);
 
-        $materia->save();
+        $materia->saveOrFail();
 
-        return redirect()->route('materias.index');
+        return redirect()->route('materias.index')->with(["mensaje" => "Nivel creado",
+    ]);;
+
+    //return redirect('/materias');
     }
 
     /**
@@ -79,6 +85,13 @@ class MateriaController extends Controller
     {
         $materias = Materia::all($materias);
         return view('materias.edit')->with('materias', Materia::all());
+
+
+        //$articulo = Articulo::find($id);
+        //return view('articulo.edit')->with('articulo',$articulo);
+
+        //return view('materias.edit', ['materias' => $materia,
+    //]);
     }
 
     /**
@@ -90,7 +103,17 @@ class MateriaController extends Controller
      */
     public function update(UpdateMateriaRequest $request, Materia $materia)
     {
-        //
+
+        $materia = Articulo::find($materia);
+        $materia->NombreMateria = $request->get('NombreMateria');
+        $materia->ClaveMateria = $request->get('ClaveMateria');
+        $materia->DocenteMateria = $request->get('DocenteMateria');
+        $materia->save();
+      
+
+        //return redirect('/materias');
+        $materia->fill($request->input())->saveOrFail();
+        return redirect()->route('materias.index')->with(["mensaje" => "Información actualizada"]);
     }
 
     /**
@@ -101,8 +124,17 @@ class MateriaController extends Controller
      */
     public function destroy(Materia $materia)
     {
+        //$articulo = Articulo::find($id);        
+        //$articulo->delete();
+
+        //return redirect('/articulos');
+
+
+
+
         $materia->delete();
-        return redirect()->route('materias.index');
+        return redirect()->route('materias.index')->with(["mensaje" => "Nivel eliminado",
+    ]);;
     }
     public function datatable(Materia $materia){
         $materia = Materia::all();

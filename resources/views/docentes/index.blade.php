@@ -11,6 +11,7 @@
     <p class="panel-heading">
         Docentes
     <div class="tabs is-right  is-toggle is-toggle-rounded">
+
         <ul>
             <li><a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
             <li class="is-active"><a class=" is-success" href="{{url('docentes/')}}">Docentes</a></li>

@@ -41,7 +41,7 @@
 
                 <div class="form-group">
                 <label for="">Colorimetria: </label>
-                <input type="color" value="#ff0000">
+                <input type="color" value="#88F725">
                 </div>
 
                 <div class="form-group">

@@ -9,7 +9,8 @@
 <article class="panel is-success">
     <p class="panel-heading">
         Materia
-    <div class="tabs is-right  is-toggle is-toggle-rounded">
+    <div class="tabs is-right  is-toggle is-toggle-rounded"><br><br>
+        <a class="button is-info is-warning" href="{{url('home/')}}">Regresar</a>
         <ul>
             <li class="is-active">
                 <a class=" is-success" href="{{url('materias/')}}">Materias</a>
@@ -54,11 +55,12 @@
 
                                 <td>
                                     <form action="{{ route('materias.destroy', $materia->id) }}" method="POST">
-                                        <a class="button is-info is-mall" href="{{route('materias.edit' , $materia->id)}}">Editar</a>
+                                        <a class="button is-info is-mall" href="/materias/{{$materia->id}}/edit">Editar</a>
                                             <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
+
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="button is-primary"> eliminar </button>
+                                        <button type="submit" class="button is-danger"> Eliminar </button>
                                         <a class="button is-info is-mall" href="/notas">Agregar nota</a>
                                     </form>
                                 </td>
@@ -77,9 +79,4 @@
             </section>
             @endsection
 
-            <body bgcolor="white">
-
-            </body>
-            </table>
-
-            </html>
+            
