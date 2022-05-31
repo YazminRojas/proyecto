@@ -9,20 +9,22 @@
 <article class="panel is-success">
     <p class="panel-heading">
         Materia
-    <div class="tabs is-right  is-toggle is-toggle-rounded">
-  <ul>
-    <li class="is-active">
-      <a class=" is-success" href="{{url('materias/')}}">Materias</a></li>
-    <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
-    <li><a class=" is-success" href="{{url('configuracions/')}}">Configuración</a></li>
-  </ul>
-  </div>
-</p>
-            
+    <div class="tabs is-right  is-toggle is-toggle-rounded"><br><br>
+        <a class="button is-info is-warning" href="{{url('home/')}}">Regresar</a>
+        <ul>
+            <li class="is-active">
+                <a class=" is-success" href="{{url('materias/')}}">Materias</a>
+            </li>
+            <li><a class=" is-success" href="{{url('calendarios/')}}">Calendario</a></li>
+            <li><a class=" is-success" href="{{url('configuracions/')}}">Configuración</a></li>
+        </ul>
+    </div>
+    </p>
+
     <center>
 
         <center>
-            <a class="button is-danger is-light" href="/materias/create">+ Materia</a>
+            <a class="button is-danger is-light" href="/materias/create">+Materia</a>
         </center>
         <div>
 
@@ -30,7 +32,7 @@
                 <div class="table-container">
                     <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
                         <thead>
-                            <tr class="is-size-4" font-size="1.5rem" class="has-text-weight-semibold">
+                            <tr class="is-size-5" font-size="1.25rem" class="has-text-weight-semibold">
                                 <th class="has-text-centered">Id</th>
                                 <th class="has-text-centered">Nombre de la materia</th>
                                 <th class="has-text-centered">Clave</th>
@@ -57,11 +59,20 @@
 
                                 <td>
                                     <form action="{{ route('materias.destroy', $materia->id) }}" method="POST">
+<<<<<<< HEAD
                                         <a class="button is-info is-mall" href="{{route('materias.edit' , $materia->id)}}">Editar</a>
                                             <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="button is-primary"> eliminar </button>
+=======
+                                        <a class="button is-warning is-mall"
+                                            href="{{route('materias.edit' , $materia->id)}}">Editar</a>
+                                        <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="button is-danger"> Eliminar </button>
+>>>>>>> 03344145b0ca3fdc90d8cd0cb3bbe34de4077d05
                                         <a class="button is-info is-mall" href="/notas">Agregar nota</a>
                                     </form>
                                 </td>
