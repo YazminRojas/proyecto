@@ -4,9 +4,10 @@
 
 <center>
     <article class="panel is-info">
-        <h1 class="panel-heading">AGENDA ADAM</h1>
+        <h1 class="panel-heading">
+            <img src="https://cdn-icons-png.flaticon.com/512/830/830573.png" width="50px" heigth="50px">AGENDA ADAM
+        </h1>
 </center>
-
 <article class="panel is-success">
     <p class="panel-heading">
         Notas

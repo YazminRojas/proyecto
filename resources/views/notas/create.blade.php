@@ -3,11 +3,12 @@
 
 
 <center>
-    <article class="panel is-success">
-        <h1 class="panel-heading">Agenda ADAM</h1>
+    <article class="panel is-info">
+        <h1 class="panel-heading">
+            <img src="https://cdn-icons-png.flaticon.com/512/830/830573.png" width="50px" heigth="50px">AGENDA ADAM
+        </h1>
 </center>
-
-<article class="panel is-warning">
+<article class="panel is-success">
 
     <p class="panel-heading">
         Notas
@@ -27,44 +28,44 @@
                 <div class="form-group">
                     <div class="colunm">
 
-                    
-                    <select name="tipoNota" id="">
 
-                        <option value="No especificado">Tipo de Nota</option>
-                        <option value="Tarea">Tarea</option>
-                        <option value="Proyecto">Proyecto</option>
-                        <option value="Recordatorio">Recordatorio</option>
-                        <option value="Otro">Otro</option>
+                        <select name="tipoNota" id="">
 
-                    </select>
-                </div>
+                            <option value="No especificado">Tipo de Nota</option>
+                            <option value="Tarea">Tarea</option>
+                            <option value="Proyecto">Proyecto</option>
+                            <option value="Recordatorio">Recordatorio</option>
+                            <option value="Otro">Otro</option>
 
-                <div class="form-group">
-                <label for="">Colorimetria: </label>
-                <input type="color" value="#ff0000">
-                </div>
-
-                <div class="form-group">
-                    <div>
-                    <label for="">Fecha</label>
-                    <input type="date" name="fecha">
+                        </select>
                     </div>
-                </div>
 
-
-                <div class="form-group">
-                    <div>
-                    <label for="">Hora de Inicio:</label>
-                    <input type="time" name="horaInicial">
+                    <div class="form-group">
+                        <label for="">Colorimetria: </label>
+                        <input type="color" value="#ff0000">
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <div>
-                    <label for="">Hora de Finalización:</label>
-                    <input type="time" name="horaFinal">
+                    <div class="form-group">
+                        <div>
+                            <label for="">Fecha</label>
+                            <input type="date" name="fecha">
+                        </div>
                     </div>
-                </div>
+
+
+                    <div class="form-group">
+                        <div>
+                            <label for="">Hora de Inicio:</label>
+                            <input type="time" name="horaInicial">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="">Hora de Finalización:</label>
+                            <input type="time" name="horaFinal">
+                        </div>
+                    </div>
                 </div>
 
                 <br><br><br>
