@@ -32,15 +32,31 @@
                 <div class="tabs is-right  is-toggle is-toggle-rounded">
                     <a class="button is-info is-warning" href="{{url('configuracions/')}}">Regresar</a>
                 </div>
+<<<<<<< HEAD
+            </section>
+            <section class="section">
+                                                                                
+                
+                <section class="column is-half is-offset-one-quarter">
+                    <section class="section">
+=======
                 </section>
                 <section class="section">
+>>>>>>> 013f40f3003f1b53036746c39cafb7a65d869eb9
 
                     <section class="column is-half is-offset-one-quarter">
                         <section class="section">
 
 
                             <! - Información inferior del
+<<<<<<< HEAD
+                                molde------------------------------------------------------------------------- ->
+                
+                                <form action="Perfil.php" method="post">
+                                <a class="button is-link" href="{{route('configuracions.index')}}">Regresar</a>
+=======
                                 molde------------------------------------------------------------------------ ->
+>>>>>>> 013f40f3003f1b53036746c39cafb7a65d869eb9
 
                                 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
                                     rel="stylesheet" />
@@ -481,10 +497,17 @@
                                                             </td>
 
 
+<<<<<<< HEAD
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+=======
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
+>>>>>>> 013f40f3003f1b53036746c39cafb7a65d869eb9
     </div>
 
 

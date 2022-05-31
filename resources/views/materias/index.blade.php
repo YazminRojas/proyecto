@@ -61,12 +61,40 @@
 
                                 <td>
                                     <form action="{{ route('materias.destroy', $materia->id) }}" method="POST">
+<<<<<<< HEAD
                                         <a class="button is-info is-mall"
-                                            href="{{route('materias.edit' , $materia->id)}}">Editar</a>
-                                        <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                        <a class="button is-info is-mall" href="/materias/{{$materia->id}}/edit">Editar</a>
+                                            <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
+
+=======
+<<<<<<< HEAD
+>>>>>>> 8798ebc0052ac32159f33d771df624721b111742
+                                        <a class="button is-info is-mall" href="{{route('materias.edit' , $materia->id)}}">Editar</a>
+                                            <a href="edit.blade.php" class="button is-success is-mall">Compartir</a>
                                         @csrf
                                         @method('DELETE')
+                                        <button type="submit" class="button is-primary"> eliminar </button>
+<<<<<<< HEAD
+=======
+=======
+                                        <a class="button is-warning is-mall"
+>>>>>>> 0bf6420c6d8b844afdd0ef84b8368c0de3808fb1
+                                            href="{{route('materias.edit' , $materia->id)}}">Editar</a>
+                                        <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
+>>>>>>> 013f40f3003f1b53036746c39cafb7a65d869eb9
+                                        @csrf
+                                        @method('DELETE')
+<<<<<<< HEAD
                                         <button type="submit" class="button is-primary"> Eliminar </button>
+=======
+                                        <button type="submit" class="button is-danger"> Eliminar </button>
+>>>>>>> 03344145b0ca3fdc90d8cd0cb3bbe34de4077d05
+>>>>>>> 8798ebc0052ac32159f33d771df624721b111742
+>>>>>>> 0bf6420c6d8b844afdd0ef84b8368c0de3808fb1
                                         <a class="button is-info is-mall" href="/notas">Agregar nota</a>
                                     </form>
                                 </td>
@@ -85,9 +113,4 @@
             </section>
             @endsection
 
-            <body bgcolor="white">
-
-            </body>
-            </table>
-
-            </html>
+            

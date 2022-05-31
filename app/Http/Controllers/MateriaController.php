@@ -17,6 +17,9 @@ class MateriaController extends Controller
     {
         $materias = Materia::all();
         return view('materias.index')->with('materias', Materia::all());
+
+        //$materias = Materia::all();
+        //return view('materias.index')->with('materias',$materias);
     }
 
     /**
@@ -57,9 +60,12 @@ class MateriaController extends Controller
             'Salon'     =>  $request->get('Salon')
         ]);
 
-        $materia->save();
+        $materia->saveOrFail();
 
-        return redirect()->route('materias.index');
+        return redirect()->route('materias.index')->with(["mensaje" => "Nivel creado",
+    ]);;
+
+    //return redirect('/materias');
     }
 
     /**
@@ -79,9 +85,30 @@ class MateriaController extends Controller
      * @param  \App\Models\Materia  $materia
      * @return \Illuminate\Http\Response
      */
+<<<<<<< HEAD
+    public function edit($id){
+        $materias=Materia::findOrFail($id);
+
+        return view('materias.edit', compact('materias'));
+=======
+<<<<<<< HEAD
+    public function edit($materias)
+    {
+        $materias = Materia::all($materias);
+        return view('materias.edit')->with('materias', Materia::all());
+
+
+        //$articulo = Articulo::find($id);
+        //return view('articulo.edit')->with('articulo',$articulo);
+
+        //return view('materias.edit', ['materias' => $materia,
+    //]);
+=======
     public function edit(Materia $id){
         $materias = Materia::findOrFail($id);
         return view('materias.edit', compact('materia'));
+>>>>>>> 013f40f3003f1b53036746c39cafb7a65d869eb9
+>>>>>>> 8798ebc0052ac32159f33d771df624721b111742
     }
 
     /**
@@ -91,9 +118,28 @@ class MateriaController extends Controller
      * @param  \App\Models\Materia  $materia
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateMateriaRequest $request, Materia $materia)
+    public function update(Request $request, $id)
     {
-        //
+<<<<<<< HEAD
+        
+
+
+        $materias=Materia::findOrFail($id);
+
+        return view('materias.edit', compact('materias'));
+=======
+
+        $materia = Articulo::find($materia);
+        $materia->NombreMateria = $request->get('NombreMateria');
+        $materia->ClaveMateria = $request->get('ClaveMateria');
+        $materia->DocenteMateria = $request->get('DocenteMateria');
+        $materia->save();
+      
+
+        //return redirect('/materias');
+        $materia->fill($request->input())->saveOrFail();
+        return redirect()->route('materias.index')->with(["mensaje" => "Información actualizada"]);
+>>>>>>> 8798ebc0052ac32159f33d771df624721b111742
     }
 
     /**
@@ -104,8 +150,17 @@ class MateriaController extends Controller
      */
     public function destroy(Materia $materia)
     {
+        //$articulo = Articulo::find($id);        
+        //$articulo->delete();
+
+        //return redirect('/articulos');
+
+
+
+
         $materia->delete();
-        return redirect()->route('materias.index');
+        return redirect()->route('materias.index')->with(["mensaje" => "Nivel eliminado",
+    ]);;
     }
     public function datatable(Materia $materia){
         $materia = Materia::all();

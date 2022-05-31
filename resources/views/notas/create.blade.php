@@ -37,7 +37,19 @@
                             <option value="Recordatorio">Recordatorio</option>
                             <option value="Otro">Otro</option>
 
+<<<<<<< HEAD
+                <div class="form-group">
+                <label for="">Colorimetria: </label>
+                <input type="color" value="#88F725">
+                </div>
+
+                <div class="form-group">
+                    <div>
+                    <label for="">Fecha</label>
+                    <input type="date" name="fecha">
+=======
                         </select>
+>>>>>>> 013f40f3003f1b53036746c39cafb7a65d869eb9
                     </div>
 
                     <div class="form-group">

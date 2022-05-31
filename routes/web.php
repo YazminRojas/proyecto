@@ -23,6 +23,20 @@ Route::resources([
   'materias' => MateriaController::class,
 ]);
 
+
+
+
+//Route::resource('materias','App\Http\Controllers\MateriaController');
+
+
+//Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+  //  return view('dashboard');
+//})->name('dashboard');
+
+
+
+//-------------------------------------------------------------
+
 use App\Http\Controllers\DocenteController;
 
 Route::resources([

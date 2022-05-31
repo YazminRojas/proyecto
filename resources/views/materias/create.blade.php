@@ -24,8 +24,7 @@
         <center>
             <br><br><br>
             <div>
-
-                <form action="{{ route('materias.store') }}" method="post">
+                <form action="{{ route('materias.store')}}" method="post">
                     @csrf
                     <fieldset>
 
