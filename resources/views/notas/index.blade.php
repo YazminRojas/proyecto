@@ -4,9 +4,10 @@
 
 <center>
     <article class="panel is-info">
-        <h1 class="panel-heading">AGENDA ADAM</h1>
+        <h1 class="panel-heading">
+            <img src="https://cdn-icons-png.flaticon.com/512/830/830573.png" width="50px" heigth="50px">AGENDA ADAM
+        </h1>
 </center>
-
 <article class="panel is-success">
     <p class="panel-heading">
         Notas
@@ -63,7 +64,7 @@
                                             href="{{route('notas.edit' , $nota->id)}}">Editar</a>
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="button is-danger"> eliminar </button>
+                                        <button type="submit" class="button is-danger"> Eliminar </button>
                                         <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
                                         <a href="index.php" class="button is-info is-mall">pdf</a>
                                     </form>
@@ -84,8 +85,4 @@
             </section>
             @endsection
 
-            <body bgcolor="white">
-
-            </body>
-
-            </html>
+            

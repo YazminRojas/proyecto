@@ -5,7 +5,9 @@
 
 <center>
     <article class="panel is-info">
-        <h1 class="panel-heading">Agenda ADAM</h1>
+        <h1 class="panel-heading">
+            <img src="https://cdn-icons-png.flaticon.com/512/830/830573.png" width="50px" heigth="50px">AGENDA ADAM
+        </h1>
 </center>
 
 <article class="panel is-success">
@@ -22,8 +24,7 @@
         <center>
             <br><br><br>
             <div>
-
-                <form action="{{ route('materias.store') }}" method="post">
+            <form action="{{ route('materias.store')}}" method="post">
                     @csrf
                     <fieldset>
 

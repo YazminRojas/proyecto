@@ -56,7 +56,7 @@ class NotaController extends Controller
             'horaFinal'     =>  $request->get('horaFinal')
         ]);
 
-        $nota->save();
+        $nota->saveOrFail();
 
         return redirect()->route('notas.index');    
     }

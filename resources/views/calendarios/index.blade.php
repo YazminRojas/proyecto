@@ -1,6 +1,12 @@
 @extends('layout.layout')
 @section('content')
-
+<center>
+    <article class="panel is-info">
+        <h1 class="panel-heading">
+            <img src="https://cdn-icons-png.flaticon.com/512/830/830573.png" width="50px" heigth="50px">AGENDA ADAM
+        </h1>
+</center>
+<a class="button is-info is-warning" href="{{url('materias/')}}">Regresar</a>
 <html>
 
 <head>
@@ -58,7 +64,9 @@
                 <a href="{{ asset('/calendarios/event/') }}/<?= $data['last']; ?>" style="margin:10px;">
                     <i class="fas fa-chevron-circle-left" style="font-size:30px;color:white;"></i>
                 </a>
-                <h2 style="font-weight:bold;margin:10px;"><?= $mespanish; ?> <small><?= $data['year']; ?></small></h2>
+                <h2 style="font-weight:bold;margin:10px;"><?= $mespanish; ?>
+                    <small><?= $data['year']; ?></small>
+                </h2>
                 <a href="{{ asset('/calendarios/event/') }}/<?= $data['next']; ?>" style="margin:10px;">
                     <i class="fas fa-chevron-circle-right" style="font-size:30px;color:white;"></i>
                 </a>
@@ -99,10 +107,7 @@
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4">
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
-            Agenda ADAM
-            <a href="{{url('materias/')}}"> Regresar</a>
-        </div>
+
         <!-- Copyright -->
 
     </footer>

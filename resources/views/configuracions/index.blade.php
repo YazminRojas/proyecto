@@ -1,7 +1,12 @@
 @extends('layout.layout')
 @section('content')
-
-<a class="button is-info is-rounded" href="{{route('materias.index')}}">Regresar</a>
+<center>
+    <article class="panel is-info">
+        <h1 class="panel-heading">
+            <img src="https://cdn-icons-png.flaticon.com/512/830/830573.png" width="50px" heigth="50px">AGENDA ADAM
+        </h1>
+</center>
+<a class="button is-info is-warning" href="{{url('materias/')}}">Regresar</a>
 
 <div align="center"> <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJKr_452NePkPuzLw9KykTyaVcK2Re9lRBqzNUwfoLsnmmaMzQ"
@@ -40,5 +45,4 @@
     </tbody>
 </table>
 
-<br><br>
 <div class="text-center"><a class="button is-success" href="{{url('home/')}}">CERRAR SESIÓN</a></div>

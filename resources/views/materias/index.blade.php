@@ -4,7 +4,9 @@
 
 <center>
     <article class="panel is-info">
-        <h1 class="panel-heading">AGENDA ADAM</h1>
+        <h1 class="panel-heading">
+            <img src="https://cdn-icons-png.flaticon.com/512/830/830573.png" width="50px" heigth="50px">AGENDA ADAM
+        </h1>
 </center>
 <article class="panel is-success">
     <p class="panel-heading">
@@ -59,11 +61,32 @@
 
                                 <td>
                                     <form action="{{ route('materias.destroy', $materia->id) }}" method="POST">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                        <a class="button is-info is-mall" href="/materias/{{$materia->id}}/edit">Editar</a>
+                                            <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
+
+=======
+<<<<<<< HEAD
+>>>>>>> 8798ebc0052ac32159f33d771df624721b111742
                                         <a class="button is-info is-mall" href="{{route('materias.edit' , $materia->id)}}">Editar</a>
                                             <a href="edit.blade.php" class="button is-success is-mall">Compartir</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="button is-primary"> eliminar </button>
+<<<<<<< HEAD
+=======
+=======
+                                        <a class="button is-warning is-mall"
+                                            href="{{route('materias.edit' , $materia->id)}}">Editar</a>
+                                        <a href="{{url('compartirs/')}}" class="button is-success is-mall">Compartir</a>
+>>>>>>> 013f40f3003f1b53036746c39cafb7a65d869eb9
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="button is-danger"> Eliminar </button>
+>>>>>>> 03344145b0ca3fdc90d8cd0cb3bbe34de4077d05
+>>>>>>> 8798ebc0052ac32159f33d771df624721b111742
                                         <a class="button is-info is-mall" href="/notas">Agregar nota</a>
                                     </form>
                                 </td>
@@ -82,9 +105,4 @@
             </section>
             @endsection
 
-            <body bgcolor="white">
-
-            </body>
-            </table>
-
-            </html>
+            
